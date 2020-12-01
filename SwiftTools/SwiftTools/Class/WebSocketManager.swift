@@ -9,13 +9,80 @@
 import UIKit
 import Starscream
 
+
+
+
+
+// MARK: - WebSocket代理
+//这里即设置代理,稍后还会发通知.使用情况不一样.
+protocol WebSocketManagerDelegate: class {
+    /// 建立连接成功通知
+    func webSocketManagerDidConnect(manager: WebSocketManager)
+    /// 断开链接通知,参数 `isReconnecting` 表示是否处于等待重新连接状态。
+    func webSocketManagerDidDisconnect(manager: WebSocketManager, error: Error?, isReconnecting: Bool)
+    /// 接收到消息后的回调(String)
+    func webSocketManagerDidReceiveMessage(manager: WebSocketManager, text: String)
+    /// 接收到消息后的回调(Data)
+    func webSocketManagerDidReceiveData(manager: WebSocketManager, data: Data)
+    
+    
+    
+}
+
+
+
 class WebSocketManager: NSObject {
     /// 单例
     static let shard = WebSocketManager()
     /// WebSocket对象
     private var webSocket : WebSocket?
-
+    /// 是否连接
     private var isConnected : Bool = false
+    /// 代理
+    weak var delegate: WebSocketManagerDelegate?
+
+    private var heartbeatInterval: TimeInterval = 5
+
+    var heartBeatTimer: Timer?
+    
+    
+    
+    
+    lazy var line: UIView = {
+        let ln = UIView()
+        //设置
+        ln.backgroundColor = UIColor.gray
+        return ln
+    }()
+    
+    /*
+     @property (nonatomic, strong) NSTimer *heartBeatTimer; //心跳定时器
+     @property (nonatomic, strong) NSTimer *netWorkTestingTimer; //没有网络的时候检测网络定时器
+     */
+    override init() {
+//        webSocket.advancedDelegate = self
+
+    }
+    
+    //初始化心跳
+    private func initHeartBeat() {
+        guard (self.heartBeatTimer != nil) else {
+            return
+        }
+        
+        
+        
+        self.heartBeatTimer = Timer(timeInterval: 1, target: self, selector: #selector(senderheartBeat), userInfo: nil, repeats: true)
+        
+        
+    }
+    
+    //心跳
+    @objc private func senderheartBeat() {
+        
+        
+    }
+    
     
     func connect(_ paremeters: Any?) {
         guard let url = URL(string: "http://localhost:8888") else {
@@ -23,15 +90,24 @@ class WebSocketManager: NSObject {
         }
 
         var request = URLRequest(url: url)
-        request.timeoutInterval = 1000
+        request.timeoutInterval = 5
+        
+        //添加头信息
         request.setValue("headers", forHTTPHeaderField: "Cookie")
         request.setValue("CustomeDeviceInfo", forHTTPHeaderField: "DeviceInfo")
         webSocket = WebSocket(request: request)
         webSocket?.delegate = self
+        webSocket?.pongDelegate = self
         webSocket?.connect()
+        // 自定义队列,一般不需要设置,默认主队列
+        //webSocket?.callbackQueue = DispatchQueue(label: "com.vluxe.starscream.myapp")
+
     }
     func sendMessage(_ text: String) {
         self.webSocket?.write(string: text, completion: nil)
+    }
+    func disconnect() {
+        webSocket?.disconnect()
     }
     
 }
@@ -67,15 +143,20 @@ extension WebSocketManager: WebSocketDelegate{
         }
     }
     
+    /// 连接成功后的回调
     func websocketDidConnect(socket: WebSocketClient) {
         print(#function)
     }
+    /// 断开连接后的回调
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         print(#function)
     }
+    
+    /// 接收到消息后的回调(String)
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
         print(#function)
     }
+    /// 接收到消息后的回调(Data)
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         print(#function)
     }
