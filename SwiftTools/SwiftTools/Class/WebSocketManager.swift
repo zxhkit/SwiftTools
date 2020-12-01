@@ -97,7 +97,7 @@ class WebSocketManager: NSObject {
         request.setValue("CustomeDeviceInfo", forHTTPHeaderField: "DeviceInfo")
         webSocket = WebSocket(request: request)
         webSocket?.delegate = self
-        webSocket?.pongDelegate = self
+
         webSocket?.connect()
         // 自定义队列,一般不需要设置,默认主队列
         //webSocket?.callbackQueue = DispatchQueue(label: "com.vluxe.starscream.myapp")
