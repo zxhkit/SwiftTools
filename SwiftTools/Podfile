@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SwiftTools' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SwiftTools
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'Moya', '~> 14.0'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'HandyJSON', '~> 5.0.2'
+  pod 'Kingfisher'
+  pod 'Closures'
+  pod 'FMDB'
+  pod 'ReachabilitySwift'
+  pod 'Starscream', '~> 4.0.0'
+
+
+  
+  
+  #OC
+  pod 'MJRefresh'
+
+
+
+
+
+
+end
