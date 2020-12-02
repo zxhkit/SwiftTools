@@ -10,9 +10,6 @@ import UIKit
 import Starscream
 
 
-
-
-
 // MARK: - WebSocket代理
 //这里即设置代理,稍后还会发通知.使用情况不一样.
 protocol WebSocketManagerDelegate: class {
