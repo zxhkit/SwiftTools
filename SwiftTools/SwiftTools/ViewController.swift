@@ -53,6 +53,44 @@ class ViewController: UIViewController {
         
         Observable.of(1,2,3)
         
+        
+        let emtyOb = Observable<Int>.empty()
+        
+        emtyOb.subscribe { (number) in
+            print("订阅",number)
+        } onError: { (error) in
+            print("error:",error)
+        } onCompleted: {
+            print("完成回调")
+        } onDisposed: {
+            print("释放回调")
+        }.disposed(by: DisposeBag())
+
+        
+        
+        let array = ["AAA","BBB"]
+        
+        
+        Observable<[String]>.just(array).subscribe { (event) in
+            print(event)
+
+        }.disposed(by: DisposeBag())
+        
+        Observable<[String]>.just(array).subscribe { (number) in
+            print("订阅:",number)
+        } onError: { (error) in
+            print("error:",error)
+        } onCompleted: {
+            print("完成回调")
+        } onDisposed: {
+            print("释放回调")
+        }.disposed(by: DisposeBag())
+
+    
+        
+         
+                
+                 
     }
     
     
@@ -69,8 +107,10 @@ class ViewController: UIViewController {
     }
     
     func numa()  {
-        
+         
     }
+
+    
 
 
 }

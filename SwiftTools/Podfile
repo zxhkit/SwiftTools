@@ -6,18 +6,23 @@ target 'SwiftTools' do
   use_frameworks!
 
   # Pods for SwiftTools
-  pod 'SnapKit', '~> 5.0.0'
+  pod 'SnapKit', '~> 5.0.1'
   pod 'Moya', '~> 14.0'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'HandyJSON', '~> 5.0.2'
-  pod 'Kingfisher'
-  pod 'Closures'
-  pod 'FMDB'
-  pod 'ReachabilitySwift'
-  pod 'Starscream', '~> 4.0.0'
+  pod 'Kingfisher', '~> 5.15.0'
+  pod 'Closures', '~> 0.7'
+  pod 'FMDB', '~> 2.7.5'
+  pod 'ReachabilitySwift', '~> 5.0.0'
+  pod 'Starscream', '~> 4.0.4'
 
   pod 'RxSwift', '~> 5.0'
   pod 'RxCocoa', '~> 5.0'
+  
+  pod 'JXSegmentedView', '~> 1.2.7'
+  pod 'JXPagingView/Paging', '~> 2.0.13'
+
+  pod 'Cache', '~> 6.0.0'
   
   
   #OC
@@ -26,6 +31,23 @@ target 'SwiftTools' do
 
 
 
+ 
+#  pod 'Moya/RxSwift', '~> 14.0.0-alpha.1'
+#  pod 'HandyJSON', :git => 'https://github.com/alibaba/HandyJSON.git'
+#  pod 'Then'
+#  pod 'NVActivityIndicatorView'
+#  pod 'Typist'
+#  pod 'SwiftyStoreKit'
+#  pod 'Eureka'
+#  pod 'ESTabBarController-swift'
+#  pod 'MBProgressHUD'
+#  pod 'TagListView'
+#  pod 'Cosmos'
+#  pod 'JXPhotoBrowser/Kingfisher', '2.1.3'
+#  pod 'URLNavigator'
+#  pod 'MonkeyKing'
+#  pod 'Tiercel', '~> 1.2.3'
+#  pod 'Repeat'
 
-
+  
 end

@@ -1,10 +1,13 @@
 PODS:
   - Alamofire (5.2.2)
+  - Cache (6.0.0)
   - Closures (0.7)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - HandyJSON (5.0.2)
+  - JXPagingView/Paging (2.0.13)
+  - JXSegmentedView (1.2.7)
   - Kingfisher (5.15.0):
     - Kingfisher/Core (= 5.15.0)
   - Kingfisher/Core (5.15.0)
@@ -25,25 +28,31 @@ PODS:
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
-  - Closures
-  - FMDB
+  - Cache (~> 6.0.0)
+  - Closures (~> 0.7)
+  - FMDB (~> 2.7.5)
   - HandyJSON (~> 5.0.2)
-  - Kingfisher
+  - JXPagingView/Paging (~> 2.0.13)
+  - JXSegmentedView (~> 1.2.7)
+  - Kingfisher (~> 5.15.0)
   - MJRefresh
   - Moya (~> 14.0)
-  - ReachabilitySwift
+  - ReachabilitySwift (~> 5.0.0)
   - RxCocoa (~> 5.0)
   - RxSwift (~> 5.0)
-  - SnapKit (~> 5.0.0)
-  - Starscream (~> 4.0.0)
+  - SnapKit (~> 5.0.1)
+  - Starscream (~> 4.0.4)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Cache
     - Closures
     - FMDB
     - HandyJSON
+    - JXPagingView
+    - JXSegmentedView
     - Kingfisher
     - MJRefresh
     - Moya
@@ -57,9 +66,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   Closures: a83b9892a5b1c4125a9dfcd53e2754db5d7f6d22
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
+  JXSegmentedView: eb1cad21f57c2543c00c3e08b8fd3c7ca54f5acd
   Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
@@ -71,6 +83,6 @@ SPEC CHECKSUMS:
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 2a79e16920a856b2e08e71e295eaaf87a894f394
+PODFILE CHECKSUM: a257509d4cd694340f7315c1cb538aa367dbf5aa
 
 COCOAPODS: 1.10.0
