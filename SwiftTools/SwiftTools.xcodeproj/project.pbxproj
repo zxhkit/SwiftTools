@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		321CC6502576451000F48FD3 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321CC64F2576451000F48FD3 /* WebSocketManager.swift */; };
+		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
+		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
+		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
 		618A054A830E9A58A9195033 /* Pods_SwiftTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EF2DE39FCDF4445F01C877 /* Pods_SwiftTools.framework */; };
 		7D4F07D424FFEA0300AA0425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4F07D324FFEA0300AA0425 /* AppDelegate.swift */; };
 		7D4F07D824FFEA0300AA0425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4F07D724FFEA0300AA0425 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		321CC64F2576451000F48FD3 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
+		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
+		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
 		7D4F07D024FFEA0300AA0425 /* SwiftTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4F07D324FFEA0300AA0425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D4F07D724FFEA0300AA0425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +48,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32FC6154265B54C700A99A1F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				32FC6155265B555C00A99A1F /* JJTabBarController.swift */,
+				32FC6157265B558100A99A1F /* JJNavigationController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		32FC6159265B558B00A99A1F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				32FC615A265B559F00A99A1F /* JJHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		7D4F07C724FFEA0300AA0425 = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +88,9 @@
 			children = (
 				7D4F07D324FFEA0300AA0425 /* AppDelegate.swift */,
 				7D4F07D724FFEA0300AA0425 /* ViewController.swift */,
+				7D4F090B24FFF6BD00AA0425 /* Class */,
 				7D4F090D24FFF6D500AA0425 /* Third */,
 				7D4F090C24FFF6C900AA0425 /* Public */,
-				7D4F090B24FFF6BD00AA0425 /* Class */,
 				7D4F07D924FFEA0300AA0425 /* Main.storyboard */,
 				7D4F07DC24FFEA0500AA0425 /* Assets.xcassets */,
 				7D4F07DE24FFEA0500AA0425 /* LaunchScreen.storyboard */,
@@ -79,6 +102,8 @@
 		7D4F090B24FFF6BD00AA0425 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				32FC6159265B558B00A99A1F /* Home */,
+				32FC6154265B54C700A99A1F /* Main */,
 				321CC64F2576451000F48FD3 /* WebSocketManager.swift */,
 			);
 			path = Class;
@@ -241,6 +266,9 @@
 				7D4F07D824FFEA0300AA0425 /* ViewController.swift in Sources */,
 				7D4F07D424FFEA0300AA0425 /* AppDelegate.swift in Sources */,
 				321CC6502576451000F48FD3 /* WebSocketManager.swift in Sources */,
+				32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */,
+				32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */,
+				32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

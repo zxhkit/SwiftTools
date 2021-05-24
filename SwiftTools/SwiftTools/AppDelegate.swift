@@ -17,9 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
-        
-        
+        let tabbarVc = JJTabBarController()
+        window?.rootViewController = tabbarVc
+        window?.backgroundColor = UIColor.white
+        window?.makeKeyAndVisible()
         return true
     }
     
