@@ -12,7 +12,7 @@ import Starscream
 
 // MARK: - WebSocket代理
 //这里即设置代理,稍后还会发通知.使用情况不一样.
-protocol WebSocketManagerDelegate: class {
+protocol WebSocketManagerDelegate: AnyObject {
     /// 建立连接成功通知
     func webSocketManagerDidConnect(manager: WebSocketManager)
     /// 断开链接通知,参数 `isReconnecting` 表示是否处于等待重新连接状态。
