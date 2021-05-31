@@ -241,5 +241,55 @@ class JJHomeViewController: UIViewController {
     }
     
     
+    //15. 三数之和(Swift版)
+    
+    /*
+     func threeSum(_ nums: [Int]) -> [[Int]] {
+
+     }
+     现将nums排序,然后遍历排序后的数组arr,将赋值当前元素为fist,旁边的元素为second(位置为left),
+     最后一个元素为third(位置为right),然后移动left和right(必须保证left<right).
+     
+     如果(sum = first+second+third) sum > 0 则right向左移动 right -= 1
+     如果sum<0 ,则left向右移动,left+=1
+     sum=0,则将结果[first,second,third]添加到result中,同时如果第left和第left+1元素相等,则跳过这个元素
+     如果right元素和第right-1的元素相等,也跳过这个元素.避免出现重复的三元组
+     */
+    //16. 最接近的三数之和(Swift版)
+
+    func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
+
+        var result:Int? = nil
+        if nums.count < 3 {
+            return 0
+        }
+        let arr = nums.sorted()
+        for i in 0..<arr.count-2 {
+            let first = arr[i]
+            if i > 0 && arr[i] == arr[i-1] {
+                continue
+            }
+            var left = i+1
+            var right = arr.count-1
+            while left < right {
+                let sum = first + arr[left] + arr[right]
+                if result == nil || abs(sum-target) <= abs(result! - target) {
+                    result = sum
+                }
+                if sum == target {
+                    return result!
+                }else if sum < target {
+                    left += 1
+                }else{
+                    right -= 1
+                }
+            }
+        }
+        return result ?? 0
+    }
+    
+    
+    
+    
     
 }
