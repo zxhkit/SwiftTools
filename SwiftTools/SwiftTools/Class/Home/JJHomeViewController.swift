@@ -23,7 +23,13 @@ class JJHomeViewController: UIViewController {
         
         let sss = aaa.joined()
         
-        print(sss,aa)
+        
+       let b = isValid("()[]{}{}")
+        
+        
+        print(sss,aa,b)
+
+        
     }
     
     
@@ -287,8 +293,31 @@ class JJHomeViewController: UIViewController {
         }
         return result ?? 0
     }
-    
-    
+    //20. 有效的括号(Swift版)
+    func isValid(_ s: String) -> Bool {
+        if s.count == 0 {
+            return true
+        }
+        var arr: [Character] = []
+        for a in s {
+            if a == ")" {
+                if arr.popLast() != "(" {
+                    return false
+                }
+            }else if a == "]" {
+                if arr.popLast() != "[" {
+                    return false
+                }
+            }else if a == "}" {
+                if arr.popLast() != "{" {
+                    return false
+                }
+            }else{
+                arr.append(a)
+            }
+        }
+        return arr.count == 0
+    }
     
     
     
