@@ -24,13 +24,12 @@ class JJHomeViewController: UIViewController {
         let sss = aaa.joined()
         
         
-       let b = isValid("()[]{}{}")
+        let b = isValid("()[]{}{}")
         
-        let num = demo([1,3,4,5,67,8,98,19,10,15,14,13,34234])
-        
+        let num = strStr("qwertyuiop", "iop")
         
         print(sss,aa,b,num)
-
+        
         
     }
     
@@ -253,7 +252,7 @@ class JJHomeViewController: UIViewController {
     
     /*
      func threeSum(_ nums: [Int]) -> [[Int]] {
-
+     
      }
      现将nums排序,然后遍历排序后的数组arr,将赋值当前元素为fist,旁边的元素为second(位置为left),
      最后一个元素为third(位置为right),然后移动left和right(必须保证left<right).
@@ -264,9 +263,9 @@ class JJHomeViewController: UIViewController {
      如果right元素和第right-1的元素相等,也跳过这个元素.避免出现重复的三元组
      */
     //16. 最接近的三数之和(Swift版)
-
+    
     func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
-
+        
         var result:Int? = nil
         if nums.count < 3 {
             return 0
@@ -371,6 +370,82 @@ class JJHomeViewController: UIViewController {
             }
         }
         return test(list, num)
+    }
+    
+    
+    
+    
+    //28. 实现strStr()
+    func strStr(_ haystack: String, _ needle: String) -> Int {
+        let count1 = haystack.count
+        let count2 = needle.count
+        if count2 == 0 {
+            return 0
+        }
+        
+        if count1 < count2 {
+            return -1
+        }
+        
+        let haystackChars = haystack.cString(using: .utf8)!
+        let needleChars = needle.cString(using: .utf8)!
+        var i = 0
+        var j = 0
+        
+        let maxi = count1 - count2
+        while i <= maxi && j < count2 {
+            var m = i
+            while m < count1 && j < count2 {
+                if haystackChars[m] == needleChars[j] {
+                    m += 1
+                    j += 1
+                    continue
+                }
+                j = 0
+                i += 1
+                break
+            }
+        }
+        if j == count2{
+            return i
+        }
+        return -1
+    }
+    
+    func strStr1(_ haystack: String, _ needle: String) -> Int {
+        let count1 = haystack.count
+        let count2 = needle.count
+        if count2 == 0 {
+            return 0
+        }
+        
+        if count1 < count2 {
+            return -1
+        }
+        
+        let haystackChars = haystack.cString(using: .utf8)!
+        let needleChars = needle.cString(using: .utf8)!
+        
+        for i in 0..<haystack.count {
+            if i + needle.count <= haystack.count {
+                let strs = haystackChars[i..<(i+needle.count)]
+                var isSame = true
+                var j = 0
+                for s in strs {
+                    if s != needleChars[j] {
+                        isSame = false
+                        break
+                    }
+                    j += 1
+                }
+                if isSame {
+                    return i
+                }
+            }else{
+                return -1
+            }
+        }
+        return -1
     }
     
 }
