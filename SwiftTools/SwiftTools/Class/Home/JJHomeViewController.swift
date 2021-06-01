@@ -26,8 +26,10 @@ class JJHomeViewController: UIViewController {
         
        let b = isValid("()[]{}{}")
         
+        let num = demo([1,3,4,5,67,8,98,19,10,15,14,13,34234])
         
-        print(sss,aa,b)
+        
+        print(sss,aa,b,num)
 
         
     }
@@ -320,5 +322,55 @@ class JJHomeViewController: UIViewController {
     }
     
     
+    
+    
+    func demo(_ nums: Array<Int>) -> Int {
+        
+        //return test(nums,0)
+        
+        var arr:[Int] = nums
+        
+        var num = 0
+        while arr.count > 1 {
+            var list:[Int] = []
+            for item in arr {
+                if num == 5 {
+                    num = 0
+                }else{
+                    list.append(item)
+                    num += 1
+                }
+            }
+            arr = list
+        }
+        
+        
+        if arr.count == 1 {
+            return arr[0]
+        }
+        
+        return arr.first ?? 0
+        
+    }
+    
+    func test(_ arr: [Int], _ i : Int) -> Int {
+        
+        if arr.count == 1 {
+            return arr[0]
+        }
+        
+        var list:[Int] = []
+        var num = i
+        
+        for item in arr {
+            if num == 5 {
+                num = 0
+            }else{
+                list.append(item)
+                num += 1
+            }
+        }
+        return test(list, num)
+    }
     
 }

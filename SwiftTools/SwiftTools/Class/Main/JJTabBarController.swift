@@ -15,8 +15,8 @@ class JJTabBarController: UITabBarController {
 
 
         addChildVC(childController: JJHomeViewController(), tiltle: "首页", normalImage: "kl_tabbar_icon_home_normal", selectImage: "kl_tabbar_icon_home_selected")
-        addChildVC(childController: JJHomeViewController(), tiltle: "俱乐部", normalImage: "kl_tabbar_icon_group_normal", selectImage: "kl_tabbar_icon_group_selected")
-        addChildVC(childController: JJHomeViewController(), tiltle: "首页", normalImage: "kl_tabbar_icon_msg_normal", selectImage: "kl_tabbar_icon_msg_selected")
+        addChildVC(childController: JJMineViewController(), tiltle: "俱乐部", normalImage: "kl_tabbar_icon_group_normal", selectImage: "kl_tabbar_icon_group_selected")
+        addChildVC(childController: JJMineViewController(), tiltle: "首页", normalImage: "kl_tabbar_icon_msg_normal", selectImage: "kl_tabbar_icon_msg_selected")
 
 
 
