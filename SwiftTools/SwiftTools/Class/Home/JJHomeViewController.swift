@@ -322,6 +322,10 @@ class JJHomeViewController: UIViewController {
     
     
     
+    func dem222o(_ nums: [Int]) -> Int {
+        
+        return 0
+    }
     
     func demo(_ nums: Array<Int>) -> Int {
         
@@ -446,6 +450,60 @@ class JJHomeViewController: UIViewController {
             }
         }
         return -1
+    }
+    
+    
+    
+    func findSubstring(_ s: String, _ words: [String]) -> [Int] {
+        if s.isEmpty || words.isEmpty {
+            return []
+        }
+        let wordLength = words[0].count
+        var resultARR = [Int]()
+        
+        
+        
+        return resultARR
+    }
+    
+    //31. 下一个排列(Swift版)
+    func nextPermutation(_ nums: inout [Int]) {
+        var j = nums.count
+        for i in stride(from: nums.count - 2, through: 0, by: -1) {
+            if nums[i+1] > nums[i] {
+                for k in stride(from: nums.count-1, to: i, by: -1) {
+                    j = k
+                    if nums[k] > nums[i] {
+                        break
+                    }
+                }
+                nums.swapAt(i, j)
+
+                return
+            }
+        }
+        return nums.sort()
+        
+       /* 其实就是从数组倒着查找，找到nums[i] 比nums[i+1]小的时候，
+          就将nums[i]跟nums[i+1]到nums[nums.length - 1]当中找到一个最小的比nums[i]大的元素交换。
+         交换后，再把nums[i+1]到nums[nums.length-1]排序，就ok了
+       */
+        
+//        var j = nums.count
+//        for i in stride(from: nums.count-2, through: 0, by: -1) {
+//            if nums[i+1] > nums[i] {
+//                for k in stride(from: nums.count-1, to: i, by: -1) {
+//                    j = k
+//                    if nums[k] > nums[i] {
+//                        break
+//                    }
+//                }
+//                nums.swapAt(i, j)
+//                nums[i+1..<nums.count].sort()
+//                return
+//            }
+//        }
+//        nums.sort()
     }
     
 }
