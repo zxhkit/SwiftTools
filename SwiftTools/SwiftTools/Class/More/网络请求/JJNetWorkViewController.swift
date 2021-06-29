@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class JJNetWorkViewController: JJBaseViewController {
 
     override func viewDidLoad() {
@@ -26,5 +27,33 @@ class JJNetWorkViewController: JJBaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    
+    
+    
+    func request1() {
+        Provider.request(API.testApi) { result in
+            switch result {
+            case let .success(response):
+                print(response)
+            case let .failure(error):
+                print(error)
+                print("网络连接失败")
+                break
+            }
+        }
+        
+    }
+    
+    func request2() {
+        NetWorkRequest(API.testApi) { jsonData in
+            print(jsonData)
+        } failure: { errorString in
+            print(errorString)
+        }
+    }
+    
+    
+    
 }
