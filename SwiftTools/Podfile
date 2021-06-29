@@ -7,9 +7,15 @@ target 'SwiftTools' do
 
   # Pods for SwiftTools
   pod 'SnapKit', '~> 5.0.1'
+  
+  
   pod 'Moya', '~> 14.0'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'HandyJSON', '~> 5.0.2'
+  pod 'ObjectMapper', '~> 3.5'
+  
+  
+  
   pod 'Kingfisher', '~> 5.15.0'
   pod 'Closures', '~> 0.7'
   pod 'FMDB', '~> 2.7.5'
