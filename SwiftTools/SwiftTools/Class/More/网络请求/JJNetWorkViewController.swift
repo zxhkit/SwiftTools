@@ -33,7 +33,7 @@ class JJNetWorkViewController: JJBaseViewController {
     
     
     func request1() {
-        Provider.request(API.testApi) { result in
+        xProvider.request(API.testApi) { result in
             switch result {
             case let .success(response):
                 print(response)

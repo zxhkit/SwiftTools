@@ -115,7 +115,7 @@ private let networkPlugin = NetworkActivityPlugin.init { changeType, TargetType 
 
 //stubClosure   用来延时发送网络请求
 
-let Provider  = MoyaProvider<API>(endpointClosure: myEndpointClosure, requestClosure: requestClosure, plugins: [networkPlugin], trackInflights: false)
+let xProvider  = MoyaProvider<API>(endpointClosure: myEndpointClosure, requestClosure: requestClosure, plugins: [networkPlugin], trackInflights: false)
 
 
 
@@ -127,7 +127,7 @@ typealias failureCallback = ((String) -> (Void))
 func NetWorkRequest(_ target: API, completion: @escaping successCallback,failure:@escaping failureCallback){
     //先判断网络是否有链接 没有的话直接返回--代码略
     
-    Provider.request(target) { (result) in
+    xProvider.request(target) { (result) in
         switch result {
         case let .success(response):
             do {
