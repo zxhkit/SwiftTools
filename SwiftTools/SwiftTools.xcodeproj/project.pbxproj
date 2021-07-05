@@ -98,17 +98,17 @@
 			children = (
 				327FF00D268AE3AB00BC3BC2 /* 网络请求 */,
 				327FF00C268AE39900BC3BC2 /* 力扣算法 */,
-				327FF007268AAEED00BC3BC2 /* 自定义导航兰 */,
+				327FF007268AAEED00BC3BC2 /* 自定义导航栏 */,
 			);
 			path = More;
 			sourceTree = "<group>";
 		};
-		327FF007268AAEED00BC3BC2 /* 自定义导航兰 */ = {
+		327FF007268AAEED00BC3BC2 /* 自定义导航栏 */ = {
 			isa = PBXGroup;
 			children = (
 				327FF008268AAF0F00BC3BC2 /* JJBaseNavigationView.swift */,
 			);
-			path = "自定义导航兰";
+			path = "自定义导航栏";
 			sourceTree = "<group>";
 		};
 		327FF00C268AE39900BC3BC2 /* 力扣算法 */ = {
