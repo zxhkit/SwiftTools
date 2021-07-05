@@ -31,7 +31,7 @@ class JJHomeViewController: JJBaseViewController {
     
     
     
-    private var data: Array = ["算法","网络请求","ewe","ewew","ew"]
+    private var data: Array = ["测试","算法","网络请求","ewe","ewew","ew"]
     
     
     
@@ -79,6 +79,10 @@ extension JJHomeViewController: UITableViewDelegate, UITableViewDataSource{
         
         let str = self.data[indexPath.row]
         switch str {
+        case "测试":
+            let vc = JJTestViewController()
+            navigationController?.pushViewController(vc, animated: true)
+            
         case "算法":
             let vc = JJLetCodeViewController()
             navigationController?.pushViewController(vc, animated: true)

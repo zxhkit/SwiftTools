@@ -46,6 +46,7 @@ class JJBaseViewController: UIViewController {
     
     public func setupNavigationViewTitle(_ title:String) {
         self.navigationCustomView.title = title
+        navigationCustomView.isHidden = false
     }
     
     override func viewWillAppear(_ animated: Bool) {

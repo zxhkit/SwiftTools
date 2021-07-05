@@ -38,6 +38,23 @@ let kBottomSafeHeight = kIs_iPhone_X ? 34 : 0
 
 
 
+/*
+ MarqueeLabel:  --跑马灯
+ BSText:    -- YYtext: swift翻版
+ Reachability.swift : --   用来检查应用当前的网络连接状况
+ MonkeyKing:  --  第三方分享
+ SQLite.swift:  --  数据库
+ TextAttributes : --  富文本
+ Atributika : --  富文本
+ XCGLogger: --  日志
+ SwiftyUserDefaults: --  偏好设置
+ KeychainAccess: -- Keychain
+ animated-tab-bar: -- 给tabbar添加动画
+ adaptive-tab-bar: -- 给tabbar添加动画
+ 
+ SwiftyStoreKit: --  封装的轻量级的APP内购框架。
+ 
+ */
 
 
 

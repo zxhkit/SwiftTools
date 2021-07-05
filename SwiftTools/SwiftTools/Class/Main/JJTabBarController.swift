@@ -14,9 +14,9 @@ class JJTabBarController: UITabBarController {
         super.viewDidLoad()
 
 
-        addChildVC(childController: JJHomeViewController(), tiltle: "首页", normalImage: "kl_tabbar_icon_home_normal", selectImage: "kl_tabbar_icon_home_selected")
-        addChildVC(childController: JJMineViewController(), tiltle: "俱乐部", normalImage: "kl_tabbar_icon_group_normal", selectImage: "kl_tabbar_icon_group_selected")
-        addChildVC(childController: JJMineViewController(), tiltle: "首页", normalImage: "kl_tabbar_icon_msg_normal", selectImage: "kl_tabbar_icon_msg_selected")
+        addChildVC(childController: JJHomeViewController(), title: "首页", normalImage: "kl_tabbar_icon_home_normal", selectImage: "kl_tabbar_icon_home_selected")
+        addChildVC(childController: JJMineViewController(), title: "俱乐部", normalImage: "kl_tabbar_icon_group_normal", selectImage: "kl_tabbar_icon_group_selected")
+        addChildVC(childController: JJMineViewController(), title: "首页", normalImage: "kl_tabbar_icon_msg_normal", selectImage: "kl_tabbar_icon_msg_selected")
 
 
 
@@ -24,7 +24,7 @@ class JJTabBarController: UITabBarController {
     }
     
 
-    func addChildVC(childController : UIViewController, tiltle:String, normalImage:String, selectImage:String) {
+    func addChildVC(childController : UIViewController, title:String, normalImage:String, selectImage:String) {
         let navi = JJNavigationController(rootViewController: childController)
         childController.title = title
         navi.tabBarItem.title = title;

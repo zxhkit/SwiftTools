@@ -21,6 +21,7 @@
 		327FF01B268B4BC000BC3BC2 /* APILogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FF01A268B4BC000BC3BC2 /* APILogin.swift */; };
 		327FF01D268B4BC900BC3BC2 /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FF01C268B4BC900BC3BC2 /* APIUser.swift */; };
 		327FF01F268B4BD700BC3BC2 /* APIShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FF01E268B4BD700BC3BC2 /* APIShops.swift */; };
+		32858D9C2692E8C800B9E8B3 /* JJTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32858D9B2692E8C800B9E8B3 /* JJTestViewController.swift */; };
 		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
 		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
 		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
@@ -48,6 +49,7 @@
 		327FF01A268B4BC000BC3BC2 /* APILogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogin.swift; sourceTree = "<group>"; };
 		327FF01C268B4BC900BC3BC2 /* APIUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
 		327FF01E268B4BD700BC3BC2 /* APIShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIShops.swift; sourceTree = "<group>"; };
+		32858D9B2692E8C800B9E8B3 /* JJTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTestViewController.swift; sourceTree = "<group>"; };
 		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
 		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
 		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				32FC615A265B559F00A99A1F /* JJHomeViewController.swift */,
+				32858D9B2692E8C800B9E8B3 /* JJTestViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -213,8 +216,8 @@
 		7D4F090B24FFF6BD00AA0425 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				32FC615C2666237B00A99A1F /* Mine */,
 				32FC6159265B558B00A99A1F /* Home */,
+				32FC615C2666237B00A99A1F /* Mine */,
 				32FC6154265B54C700A99A1F /* Main */,
 				321CC64F2576451000F48FD3 /* WebSocketManager.swift */,
 				327FF006268AAEE500BC3BC2 /* More */,
@@ -383,6 +386,7 @@
 				7D4F07D424FFEA0300AA0425 /* AppDelegate.swift in Sources */,
 				321CC6502576451000F48FD3 /* WebSocketManager.swift in Sources */,
 				327FF0012689F24400BC3BC2 /* JJTableView.swift in Sources */,
+				32858D9C2692E8C800B9E8B3 /* JJTestViewController.swift in Sources */,
 				327FF01B268B4BC000BC3BC2 /* APILogin.swift in Sources */,
 				327FF009268AAF0F00BC3BC2 /* JJBaseNavigationView.swift in Sources */,
 				327FF011268AEE6200BC3BC2 /* API.swift in Sources */,
