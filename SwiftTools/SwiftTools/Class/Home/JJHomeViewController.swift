@@ -31,7 +31,7 @@ class JJHomeViewController: JJBaseViewController {
     
     
     
-    private var data: Array = ["测试","算法","网络请求","ewe","ewew","ew"]
+    private var data: Array = ["测试","算法","网络请求","json处理","ewew","ew"]
     
     
     
@@ -91,6 +91,9 @@ extension JJHomeViewController: UITableViewDelegate, UITableViewDataSource{
             let vc = JJNetWorkViewController()
             navigationController?.pushViewController(vc, animated: true)
           
+        case "json处理":
+            let vc = JJJsonViewController()
+            navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

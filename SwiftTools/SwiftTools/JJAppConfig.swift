@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-let KScreenWidth = UIScreen.main.bounds.size.height < UIScreen.main.bounds.size.width ? UIScreen.main.bounds.size.height : UIScreen.main.bounds.size.width
-let KScreenHeight = UIScreen.main.bounds.size.height > UIScreen.main.bounds.size.width ? UIScreen.main.bounds.size.height : UIScreen.main.bounds.size.width
+let KScreenWidth:Int = Int(UIScreen.main.bounds.size.height < UIScreen.main.bounds.size.width ? UIScreen.main.bounds.size.height : UIScreen.main.bounds.size.width)
+let KScreenHeight:Int = Int(UIScreen.main.bounds.size.height > UIScreen.main.bounds.size.width ? UIScreen.main.bounds.size.height : UIScreen.main.bounds.size.width)
 
-let kIs_iPhone_X = KScreenHeight == 812.0 || KScreenHeight == 896.0 || KScreenHeight == 844.0 || KScreenHeight == 926.0 || KScreenHeight == 780.0
+let kIs_iPhone_X = KScreenHeight == 812 || KScreenHeight == 896 || KScreenHeight == 844 || KScreenHeight == 926 || KScreenHeight == 780
 
 
 
