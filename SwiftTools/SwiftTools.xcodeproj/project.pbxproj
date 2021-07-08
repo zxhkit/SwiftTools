@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		321CC6502576451000F48FD3 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321CC64F2576451000F48FD3 /* WebSocketManager.swift */; };
+		322B646326968E2E00FDA10B /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322B646226968E2E00FDA10B /* JsonModel.swift */; };
 		325757492695B9070049177C /* JJJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325757482695B9070049177C /* JJJsonViewController.swift */; };
 		325757532695BED70049177C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 325757522695BED70049177C /* MBProgressHUD.m */; };
 		325757552695D07E0049177C /* JJBaseToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325757542695D07E0049177C /* JJBaseToast.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		321CC64F2576451000F48FD3 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		322B646226968E2E00FDA10B /* JsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 		325757482695B9070049177C /* JJJsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJJsonViewController.swift; sourceTree = "<group>"; };
 		3257574B2695BE9A0049177C /* SwiftTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-Bridging-Header.h"; sourceTree = "<group>"; };
 		325757512695BED70049177C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				325757482695B9070049177C /* JJJsonViewController.swift */,
+				322B646226968E2E00FDA10B /* JsonModel.swift */,
 			);
 			path = "json处理";
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				32858D9C2692E8C800B9E8B3 /* JJTestViewController.swift in Sources */,
 				325757572695D0980049177C /* JJToast.swift in Sources */,
 				327FF01B268B4BC000BC3BC2 /* APILogin.swift in Sources */,
+				322B646326968E2E00FDA10B /* JsonModel.swift in Sources */,
 				327FF009268AAF0F00BC3BC2 /* JJBaseNavigationView.swift in Sources */,
 				327FF011268AEE6200BC3BC2 /* API.swift in Sources */,
 				325757492695B9070049177C /* JJJsonViewController.swift in Sources */,
