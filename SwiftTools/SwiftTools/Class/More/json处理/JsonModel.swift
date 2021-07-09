@@ -130,7 +130,7 @@ struct Target: Mappable {
 
 
 
-struct User: HandyJSON {
+struct UserModel: HandyJSON {
     var id: String?
     var name: String?
     var phoneNum: String?

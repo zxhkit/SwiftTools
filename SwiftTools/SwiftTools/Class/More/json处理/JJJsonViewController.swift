@@ -175,12 +175,12 @@ class JJJsonViewController: JJBaseViewController {
     func test5() {
         
         let jsonString = "{\"id\":\"3243224\",\"name\":\"亮哥\",\"phoneNum\":\"13232324343\"}"
-        if let user = JSONDeserializer<User>.deserializeFrom(json: jsonString) {
+        if let user = JSONDeserializer<UserModel>.deserializeFrom(json: jsonString) {
             print(user.name ?? "-")
         }
         
         let json = ["id":"3243224","name":"亮哥","phoneNum":"13232324343"]
-        if let user = User.deserialize(from: json) {
+        if let user = UserModel.deserialize(from: json) {
             print(user.name ?? "-")
         }
     }
@@ -188,7 +188,7 @@ class JJJsonViewController: JJBaseViewController {
     func test6() {
         
         let json: [String : Any] = ["id":"3243224","name":"亮哥","phoneNum":"13232324343","familyMemberrs":["爸爸","妈妈","哥哥","妹妹"]]
-        if let user = User.deserialize(from: json) {
+        if let user = UserModel.deserialize(from: json) {
             print(user.familyMemberrs ?? [])
         }
     }
@@ -196,7 +196,7 @@ class JJJsonViewController: JJBaseViewController {
     func test7() {
         let json: [String : Any] = ["code":200, "msg": "success","data":["user":["id":"3243224","name":"亮哥","phoneNum":"13232324343","familyMemberrs":["爸爸","妈妈","哥哥","妹妹"],"family":["mother":"毛毛","father":"烜烜","brother":"果果","sister":"妹妹"]]]]
             
-        if let user = User.deserialize(from: json, designatedPath: "data.user") {
+        if let user = UserModel.deserialize(from: json, designatedPath: "data.user") {
             print(user.name ?? "-")
             print(user.family?.father ?? "-")
         }
