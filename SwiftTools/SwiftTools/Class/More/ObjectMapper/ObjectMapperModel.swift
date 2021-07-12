@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 
+//1.模型定义
 class User: Mappable {
     var username: String?
     var age: Int?
@@ -24,6 +25,15 @@ class User: Mappable {
     }
      
     required init?(map: Map) {
+        
+        
+        //ObjectMapper 通过 Mappable 协议中的 init?(map: Map) 方法来初始化创建对象。
+        //我们可以利用这个方法，在对象序列化之前验证 JSON 合法性。在不符合的条件时，返回 nil 阻止映射发生。
+        
+        //检查JSON中是否含有"username"属性
+        if map.JSON["username"] == nil {
+            return nil
+        }
     }
      
     // Mappable
@@ -37,7 +47,91 @@ class User: Mappable {
         array       <- map["arr"]
         dictionary  <- map["dict"]
     }
+    
 }
+
+
+
+
+
+//交通工具
+class Vehicle: StaticMappable {
+    //类型
+    var type:String?
+    
+    
+    static func objectForMapping(map: Map) -> BaseMappable? {
+        if let type:String = map["type"].value() {
+            switch type {
+            case "car":
+                return Car()
+            case "bus":
+                return Bus()
+            default:
+                return Vehicle()
+            }
+        }
+        return nil
+    }
+    
+    init() {
+    }
+    
+    func mapping(map: Map) {
+        type   <-  map["type"]
+    }
+    
+    
+}
+
+
+class Car: Vehicle {
+    
+    //名字
+    var name:String?
+    
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+        name  <- map["name"]
+    }
+    
+}
+
+
+class Bus: Vehicle {
+        //费用
+    var fee: Int?
+    
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+        fee  <-  map["fee"]
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
