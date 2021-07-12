@@ -10,6 +10,7 @@
 		321CC6502576451000F48FD3 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321CC64F2576451000F48FD3 /* WebSocketManager.swift */; };
 		322B646326968E2E00FDA10B /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322B646226968E2E00FDA10B /* JsonModel.swift */; };
 		322B64F82698176800FDA10B /* JJObjectMapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322B64F72698176800FDA10B /* JJObjectMapperViewController.swift */; };
+		322B64FA2698186F00FDA10B /* ObjectMapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322B64F92698186F00FDA10B /* ObjectMapperModel.swift */; };
 		325757492695B9070049177C /* JJJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325757482695B9070049177C /* JJJsonViewController.swift */; };
 		325757532695BED70049177C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 325757522695BED70049177C /* MBProgressHUD.m */; };
 		325757552695D07E0049177C /* JJBaseToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325757542695D07E0049177C /* JJBaseToast.swift */; };
@@ -45,6 +46,7 @@
 		321CC64F2576451000F48FD3 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		322B646226968E2E00FDA10B /* JsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 		322B64F72698176800FDA10B /* JJObjectMapperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJObjectMapperViewController.swift; sourceTree = "<group>"; };
+		322B64F92698186F00FDA10B /* ObjectMapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperModel.swift; sourceTree = "<group>"; };
 		325757482695B9070049177C /* JJJsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJJsonViewController.swift; sourceTree = "<group>"; };
 		3257574B2695BE9A0049177C /* SwiftTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-Bridging-Header.h"; sourceTree = "<group>"; };
 		325757512695BED70049177C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				322B64F72698176800FDA10B /* JJObjectMapperViewController.swift */,
+				322B64F92698186F00FDA10B /* ObjectMapperModel.swift */,
 			);
 			path = ObjectMapper;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				327FF0032689F5A000BC3BC2 /* JJBaseViewController.swift in Sources */,
 				32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */,
 				327FF01D268B4BC900BC3BC2 /* APIUser.swift in Sources */,
+				322B64FA2698186F00FDA10B /* ObjectMapperModel.swift in Sources */,
 				327FF00B268AB38C00BC3BC2 /* JJAppConfig.swift in Sources */,
 				32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */,
 				327FF0052689F61400BC3BC2 /* JJLetCodeViewController.swift in Sources */,

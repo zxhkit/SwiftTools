@@ -14,22 +14,38 @@ class JJObjectMapperViewController: JJBaseViewController {
         super.viewDidLoad()
         self.setupNavigationViewTitle("ObjectMapper")
 
-        
-        
-        
+        _ = createButton("按钮1", 1, CGRect(x: 30, y: kNavBarHeight+40, width: 60, height: 40))
+        _ = createButton("按钮2", 2, CGRect(x: 120, y: kNavBarHeight+40, width: 60, height: 40))
+        createButton("按钮3", 3, CGRect(x: 120, y: kNavBarHeight+40, width: 60, height: 40))
         
         // Do any additional setup after loading the view.
     }
     
+    private func createButton(_ text: String, _ tag: Int, _ frame: CGRect) -> UIButton {
+        let btn = UIButton(type: .custom)
+        btn.frame = frame
+        btn.tag = tag
+        btn.backgroundColor  = UIColor.lightGray
+        btn.layer.masksToBounds = true
+        btn.layer.cornerRadius = 3
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        btn.setTitle(text, for: .normal)
+        btn.setTitleColor(UIColor.white, for: .normal)
+        btn.addTarget(self, action: #selector(buttonClick(_:)), for: .touchUpInside)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        view.addSubview(btn)
+        return btn
     }
-    */
 
+    @objc private func buttonClick(_ button: UIButton)  {
+                
+        
+    }
+
+    
+    
+    
+    
+    
+    
 }
