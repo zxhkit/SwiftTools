@@ -19,30 +19,44 @@ class JJJsonViewController: JJBaseViewController {
         // Do any additional setup after loading the view.
         self.setupNavigationViewTitle("json处理")
         
-        let btn = UIButton(type: .custom)
-        btn.frame = CGRect(x: (KScreenWidth - 60)/2, y: kNavBarHeight+40, width: 60, height: 40)
-        btn.backgroundColor  = UIColor.lightGray
-        btn.layer.masksToBounds = true
-        btn.layer.cornerRadius = 3
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
-        btn.setTitle("点击一下", for: .normal)
-        btn.setTitleColor(UIColor.white, for: .normal)
-        btn.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
-        view.addSubview(btn)
-        
+        _ = createCustomButton("按钮1", 1, CGRect(x: 30, y: kNavBarHeight+40, width: 60, height: 40))
+        _ = createCustomButton("按钮2", 2, CGRect(x: 120, y: kNavBarHeight+40, width: 60, height: 40))
+        _ = createCustomButton("按钮3", 3, CGRect(x: 210, y: kNavBarHeight+40, width: 60, height: 40))
+        _ = createCustomButton("按钮4", 4, CGRect(x: 300, y: kNavBarHeight+40, width: 60, height: 40))
+       
+        _ = createCustomButton("按钮5", 5, CGRect(x: 30, y: kNavBarHeight+100, width: 60, height: 40))
+        _ = createCustomButton("按钮6", 6, CGRect(x: 120, y: kNavBarHeight+100, width: 60, height: 40))
+        _ = createCustomButton("按钮7", 7, CGRect(x: 210, y: kNavBarHeight+100, width: 60, height: 40))
+        _ = createCustomButton("按钮8", 8, CGRect(x: 300, y: kNavBarHeight+100, width: 60, height: 40))
+
                 
     }
     
     
-    @objc private func buttonClick() {
-//        test1()
-//        test2()
-//        test3()
-//        test4()
-        test5()
-        test6()
-        test7()
-        test8()
+    override func buttonCustomClick(_ button: UIButton) {
+        let tag = button.tag
+        
+        switch tag {
+        case 1:
+           test1()
+        case 2:
+            test2()
+        case 3:
+            test3()
+        case 4:
+            test4()
+        case 5:
+            test5()
+        case 6:
+            test6()
+        case 7:
+            test7()
+        case 8:
+            test8()
+        default:
+            break
+        }
+        
     }
     
     
@@ -200,6 +214,17 @@ class JJJsonViewController: JJBaseViewController {
             print(user.name ?? "-")
             print(user.family?.father ?? "-")
         }
+        
+        
+        
+        let jsonTest: [String : Any] = ["code":200, "msg": "success","data":["user":["id":"3243224","name":"亮哥","phoneNum":"13232324343","familyMemberrs":["爸爸","妈妈","哥哥","妹妹"],"family":["mother":"毛毛","father":"烜烜","brother":"果果","sister":"妹妹"],"test":[["mother":"毛毛1","father":"烜烜1","brother":"果果1","sister":"妹妹1"],["mother":"毛毛2","father":"烜烜2","brother":"果果2","sister":"妹妹2"],["mother":"毛毛3","father":"烜烜3","brother":"果果3","sister":"妹妹3"]]]]]
+
+        if let userTest = UserModel.deserialize(from: jsonTest, designatedPath: "data.user") {
+            
+            print(userTest.test?.first?.mother ?? "-")
+        }
+        
+        
     }
     
     

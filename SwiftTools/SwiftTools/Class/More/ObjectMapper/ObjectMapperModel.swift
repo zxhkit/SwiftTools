@@ -101,10 +101,11 @@ class Car: Vehicle {
 class Bus: Vehicle {
         //费用
     var fee: Int?
-    
+    var id: Int?
     override func mapping(map: Map) {
         super.mapping(map: map)
         fee  <-  map["fee"]
+        id  <- (map["id"],transform)
     }
     
 }
@@ -119,10 +120,47 @@ class Bus: Vehicle {
 
 
 
+//public protocol TransformType {
+//    associatedtype Object
+//    associatedtype JSON
+//
+//    func transformFromJSON(_ value: Any?) -> Object?
+//    func transformToJSON(_ value: Object?) -> JSON?
+//}
+//
+//
+//open class DateTransform: TransformType {
+//    public typealias Object = Date
+//    public typealias JSON = Double
+//
+//    public init() {}
+//
+//    open func transformFromJSON(_ value: Any?) -> Date? {
+//        if let timeInt = value as? Double {
+//            return Date(timeIntervalSince1970: TimeInterval(timeInt))
+//        }
+//
+//        if let timeStr = value as? String {
+//            return Date(timeIntervalSince1970: TimeInterval(atof(timeStr)))
+//        }
+//
+//        return nil
+//    }
+//
+//    open func transformToJSON(_ value: Date?) -> Double? {
+//        if let date = value {
+//            return Double(date.timeIntervalSince1970)
+//        }
+//        return nil
+//    }
+//}
 
 
-
-
+let transform = TransformOf<Int,String> { (value: String?) in
+    return Int(value!)
+} toJSON: { (value:Int?) in
+    return String(value!)
+}
 
 
 

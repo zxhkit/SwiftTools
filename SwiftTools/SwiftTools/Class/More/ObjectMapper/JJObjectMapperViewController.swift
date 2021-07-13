@@ -218,14 +218,71 @@ class JJObjectMapperViewController: JJBaseViewController {
     
     // MARK: - 重点玩法,高级用法
     
+    // MARK: - 嵌套对象的映射
     func test7() {
+        //1.使用点符号(.)映射嵌套对象
+        /*
+         (1)假设我们有如下JSON字符串
+         {
+            "type":"S1"
+            "distance":{
+                    "text":"102 ft"
+                    "value": 31
+            }
+         }
+         要将 distance 中 value 映射成 distance 属性可以使用如下操作
+         func mapping(map: Map) {
+             distance <- map["distance.value"]
+         }
+         
+         //2.嵌套键值访问同样支持数组
+         
+         {
+             "type" : "S1",
+             "distances" : [
+                 {
+                 "text" : "104 ft",
+                 "value" : 32
+                 },
+                 {
+                 "text" : "102 ft",
+                 "value" : 31
+                 }
+             ]
+         }
+         
+         要将distances里面的饿死一个元素的value值映射成distance属性可以使用如下操作
+         func mapping(map: Map) {
+             distance <- map["distance.0.value"]
+         }
+         
+         二、数据自定义变换
+         Objectmapper支持在映射过程中实现转换值的自定义变换.
+         如果使用变换,只需在<-操作符的右侧创建一个元组,其中包含map["field_name"]
+         以及对应的变换对象
+         
+         */
+
         
+        let lilei = User()
+        lilei.username = "李雷"
+        lilei.birthday = Date()
+        
+        let json = lilei.toJSONString()!
+        print(json)
+        
+        
+        let jsonString = "{\"username\":\"李雷\",\"birthday\":1626165806.714148}"
+        let user = User(JSONString: jsonString)!
+        
+        print(user.birthday!)
         
     }
     
     
     func test8() {
-        
+        //2.使用TransformOf快速创建变换
+        //如果觉得创建一个变换类比较麻烦,还可以使用TransformOf,通过闭包的形式创建变换
         
     }
     

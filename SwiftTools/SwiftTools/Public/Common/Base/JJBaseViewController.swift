@@ -57,7 +57,26 @@ class JJBaseViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
     }
     
+    func createCustomButton(_ text: String, _ tag: Int, _ frame: CGRect) -> UIButton {
+        let btn = UIButton(type: .custom)
+        btn.frame = frame
+        btn.tag = tag
+        btn.backgroundColor  = UIColor.lightGray
+        btn.layer.masksToBounds = true
+        btn.layer.cornerRadius = 3
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        btn.setTitle(text, for: .normal)
+        btn.setTitleColor(UIColor.white, for: .normal)
+        btn.addTarget(self, action: #selector(buttonCustomClick(_:)), for: .touchUpInside)
+
+        view.addSubview(btn)
+        return btn
+    }
     
+    
+    @objc func buttonCustomClick(_ button: UIButton) {
+        
+    }
     
 
 }

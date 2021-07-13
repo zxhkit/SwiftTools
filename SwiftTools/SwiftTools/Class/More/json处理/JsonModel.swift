@@ -137,6 +137,9 @@ struct UserModel: HandyJSON {
     var familyMemberrs: [String]?
     var family: Family?
 
+    
+    var test: [Family]?
+
 }
 
 struct Family: HandyJSON {
