@@ -43,6 +43,7 @@ class JJPhotoPickerViewController: JJBaseViewController {
         let ps = ZLPhotoPreviewSheet()
         ps.selectImageBlock = { [weak self] (images, assets, isOriginal) in
             // your code
+            self?.test3()
         }
         ps.showPreview(animate: true, sender: self)
     }
@@ -50,6 +51,7 @@ class JJPhotoPickerViewController: JJBaseViewController {
         let ps = ZLPhotoPreviewSheet()
         ps.selectImageBlock = { [weak self] (images, assets, isOriginal) in
             // your code
+            self?.test3()
         }
         ps.showPhotoLibrary(sender: self)
     }

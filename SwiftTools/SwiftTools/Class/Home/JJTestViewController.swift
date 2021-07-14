@@ -17,12 +17,27 @@ class JJTestViewController: JJBaseViewController {
         
         
         
-        let structCoder = StructCoder(name: "XH", age: 25)
+        let _ = StructCoder(name: "XH", age: 25)
         
         var structCoder2 = StructCoder()
         structCoder2.name = "XH"
         structCoder2.age = 25
         
+        
+        
+        var s1:[String] = ["2"]
+        var s2:[String] = []
+        
+        
+        s2 = s1
+        
+        s1.append("3")
+        
+        s2.append("0")
+        
+        print(s1)
+        print(s2)
+
     }
     
 

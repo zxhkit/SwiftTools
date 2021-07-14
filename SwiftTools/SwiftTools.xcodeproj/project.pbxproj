@@ -33,6 +33,9 @@
 		32858D9C2692E8C800B9E8B3 /* JJTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32858D9B2692E8C800B9E8B3 /* JJTestViewController.swift */; };
 		328A4A23269E7C67007A9235 /* JJMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A22269E7C67007A9235 /* JJMethodViewController.swift */; };
 		328A4A26269E8B47007A9235 /* JJPhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A25269E8B47007A9235 /* JJPhotoPickerViewController.swift */; };
+		328A4A29269EC638007A9235 /* JJCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A28269EC638007A9235 /* JJCycleViewController.swift */; };
+		328A4A2B269ECEC4007A9235 /* JJCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A2A269ECEC4007A9235 /* JJCycleView.swift */; };
+		328A4A2D269ECED7007A9235 /* JJCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A2C269ECED7007A9235 /* JJCycleCell.swift */; };
 		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
 		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
 		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
@@ -74,6 +77,9 @@
 		32858D9B2692E8C800B9E8B3 /* JJTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTestViewController.swift; sourceTree = "<group>"; };
 		328A4A22269E7C67007A9235 /* JJMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJMethodViewController.swift; sourceTree = "<group>"; };
 		328A4A25269E8B47007A9235 /* JJPhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJPhotoPickerViewController.swift; sourceTree = "<group>"; };
+		328A4A28269EC638007A9235 /* JJCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJCycleViewController.swift; sourceTree = "<group>"; };
+		328A4A2A269ECEC4007A9235 /* JJCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJCycleView.swift; sourceTree = "<group>"; };
+		328A4A2C269ECED7007A9235 /* JJCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJCycleCell.swift; sourceTree = "<group>"; };
 		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
 		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
 		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 		327FF006268AAEE500BC3BC2 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				328A4A27269EC605007A9235 /* 轮播图 */,
 				328A4A24269E8B15007A9235 /* ZL图片选择 */,
 				328A4A21269E7C41007A9235 /* Method */,
 				322B64F62698172900FDA10B /* ObjectMapper */,
@@ -233,6 +240,16 @@
 				328A4A25269E8B47007A9235 /* JJPhotoPickerViewController.swift */,
 			);
 			path = "ZL图片选择";
+			sourceTree = "<group>";
+		};
+		328A4A27269EC605007A9235 /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A28269EC638007A9235 /* JJCycleViewController.swift */,
+				328A4A2A269ECEC4007A9235 /* JJCycleView.swift */,
+				328A4A2C269ECED7007A9235 /* JJCycleCell.swift */,
+			);
+			path = "轮播图";
 			sourceTree = "<group>";
 		};
 		32FC6154265B54C700A99A1F /* Main */ = {
@@ -481,6 +498,7 @@
 				325757572695D0980049177C /* JJToast.swift in Sources */,
 				327FF01B268B4BC000BC3BC2 /* APILogin.swift in Sources */,
 				322B646326968E2E00FDA10B /* JsonModel.swift in Sources */,
+				328A4A2B269ECEC4007A9235 /* JJCycleView.swift in Sources */,
 				327FF009268AAF0F00BC3BC2 /* JJBaseNavigationView.swift in Sources */,
 				327FF011268AEE6200BC3BC2 /* API.swift in Sources */,
 				325757492695B9070049177C /* JJJsonViewController.swift in Sources */,
@@ -490,7 +508,9 @@
 				32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */,
 				327FF01D268B4BC900BC3BC2 /* APIUser.swift in Sources */,
 				322B64FA2698186F00FDA10B /* ObjectMapperModel.swift in Sources */,
+				328A4A2D269ECED7007A9235 /* JJCycleCell.swift in Sources */,
 				327FF00B268AB38C00BC3BC2 /* JJAppConfig.swift in Sources */,
+				328A4A29269EC638007A9235 /* JJCycleViewController.swift in Sources */,
 				328A4A23269E7C67007A9235 /* JJMethodViewController.swift in Sources */,
 				32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */,
 				327FF0052689F61400BC3BC2 /* JJLetCodeViewController.swift in Sources */,
