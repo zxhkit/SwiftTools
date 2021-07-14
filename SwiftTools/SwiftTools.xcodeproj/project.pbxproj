@@ -36,6 +36,9 @@
 		328A4A29269EC638007A9235 /* JJCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A28269EC638007A9235 /* JJCycleViewController.swift */; };
 		328A4A2B269ECEC4007A9235 /* JJCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A2A269ECEC4007A9235 /* JJCycleView.swift */; };
 		328A4A2D269ECED7007A9235 /* JJCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A2C269ECED7007A9235 /* JJCycleCell.swift */; };
+		328A4A33269EE6DA007A9235 /* UIColor+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A32269EE6DA007A9235 /* UIColor+Extra.swift */; };
+		328A4A35269EE807007A9235 /* String+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A34269EE807007A9235 /* String+Extra.swift */; };
+		328A4A37269EE87B007A9235 /* Extensions+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A36269EE87B007A9235 /* Extensions+File.swift */; };
 		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
 		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
 		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
@@ -80,6 +83,9 @@
 		328A4A28269EC638007A9235 /* JJCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJCycleViewController.swift; sourceTree = "<group>"; };
 		328A4A2A269ECEC4007A9235 /* JJCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJCycleView.swift; sourceTree = "<group>"; };
 		328A4A2C269ECED7007A9235 /* JJCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJCycleCell.swift; sourceTree = "<group>"; };
+		328A4A32269EE6DA007A9235 /* UIColor+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extra.swift"; sourceTree = "<group>"; };
+		328A4A34269EE807007A9235 /* String+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extra.swift"; sourceTree = "<group>"; };
+		328A4A36269EE87B007A9235 /* Extensions+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+File.swift"; sourceTree = "<group>"; };
 		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
 		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
 		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
@@ -330,7 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				327FEFFE2689F21300BC3BC2 /* Common */,
-				7D4F090E24FFF6E300AA0425 /* Catgrory */,
+				7D4F090E24FFF6E300AA0425 /* Extensions */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -343,11 +349,14 @@
 			path = Third;
 			sourceTree = "<group>";
 		};
-		7D4F090E24FFF6E300AA0425 /* Catgrory */ = {
+		7D4F090E24FFF6E300AA0425 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				328A4A36269EE87B007A9235 /* Extensions+File.swift */,
+				328A4A32269EE6DA007A9235 /* UIColor+Extra.swift */,
+				328A4A34269EE807007A9235 /* String+Extra.swift */,
 			);
-			path = Catgrory;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8921234598B2803F57635CD9 /* Frameworks */ = {
@@ -483,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328A4A35269EE807007A9235 /* String+Extra.swift in Sources */,
 				327FF00F268AE3D300BC3BC2 /* JJNetWorkViewController.swift in Sources */,
 				325757592695D7C70049177C /* JJCustomView.swift in Sources */,
 				3261A983269DC01800C4B5F2 /* NetworkTools.swift in Sources */,
@@ -503,6 +513,7 @@
 				327FF011268AEE6200BC3BC2 /* API.swift in Sources */,
 				325757492695B9070049177C /* JJJsonViewController.swift in Sources */,
 				322B64F82698176800FDA10B /* JJObjectMapperViewController.swift in Sources */,
+				328A4A37269EE87B007A9235 /* Extensions+File.swift in Sources */,
 				327FF015268AEE9100BC3BC2 /* MoyaConfig.swift in Sources */,
 				327FF0032689F5A000BC3BC2 /* JJBaseViewController.swift in Sources */,
 				32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */,
@@ -517,6 +528,7 @@
 				327FF01F268B4BD700BC3BC2 /* APIShops.swift in Sources */,
 				327FF013268AEE7600BC3BC2 /* NetworkManager.swift in Sources */,
 				32FC615E2666239000A99A1F /* JJMineViewController.swift in Sources */,
+				328A4A33269EE6DA007A9235 /* UIColor+Extra.swift in Sources */,
 				32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
