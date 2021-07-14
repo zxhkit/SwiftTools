@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.2.2)
   - Cache (6.0.0)
   - Closures (0.7)
+  - FLEX (4.4.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -16,7 +17,11 @@ PODS:
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
   - ObjectMapper (3.5.3)
+  - Protobuf (3.17.0)
   - ReachabilitySwift (5.0.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
@@ -25,7 +30,16 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
   - SnapKit (5.0.1)
+  - SSZipArchive (2.4.2)
   - Starscream (4.0.4)
+  - SVGAPlayer (2.5.7):
+    - SVGAPlayer/Core (= 2.5.7)
+    - SVGAPlayer/ProtoFiles (= 2.5.7)
+  - SVGAPlayer/Core (2.5.7):
+    - SSZipArchive (>= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.5.7):
+    - Protobuf (~> 3.4)
   - SwiftyJSON (4.3.0)
   - ZLPhotoBrowser (4.1.6):
     - ZLPhotoBrowser/Core (= 4.1.6)
@@ -34,6 +48,7 @@ PODS:
 DEPENDENCIES:
   - Cache (~> 6.0.0)
   - Closures (~> 0.7)
+  - FLEX (= 4.4.1)
   - FMDB (~> 2.7.5)
   - HandyJSON (~> 5.0.2)
   - JXPagingView/Paging (~> 2.0.13)
@@ -41,12 +56,14 @@ DEPENDENCIES:
   - Kingfisher (~> 5.15.0)
   - MJRefresh
   - Moya (~> 14.0)
+  - NVActivityIndicatorView (~> 5.1.1)
   - ObjectMapper (~> 3.5)
   - ReachabilitySwift (~> 5.0.0)
   - RxCocoa (~> 5.0)
   - RxSwift (~> 5.0)
   - SnapKit (~> 5.0.1)
   - Starscream (~> 4.0.4)
+  - SVGAPlayer (~> 2.5.7)
   - SwiftyJSON (~> 4.0)
   - ZLPhotoBrowser (~> 4.1.6)
 
@@ -55,6 +72,7 @@ SPEC REPOS:
     - Alamofire
     - Cache
     - Closures
+    - FLEX
     - FMDB
     - HandyJSON
     - JXPagingView
@@ -62,13 +80,17 @@ SPEC REPOS:
     - Kingfisher
     - MJRefresh
     - Moya
+    - NVActivityIndicatorView
     - ObjectMapper
+    - Protobuf
     - ReachabilitySwift
     - RxCocoa
     - RxRelay
     - RxSwift
     - SnapKit
+    - SSZipArchive
     - Starscream
+    - SVGAPlayer
     - SwiftyJSON
     - ZLPhotoBrowser
 
@@ -76,6 +98,7 @@ SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   Closures: a83b9892a5b1c4125a9dfcd53e2754db5d7f6d22
+  FLEX: 7ca2c8cd3a435ff501ff6d2f2141e9bdc934eaab
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
@@ -83,16 +106,20 @@ SPEC CHECKSUMS:
   Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  Protobuf: 7327d4444215b5f18e560a97f879ff5503c4581c
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+  SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   ZLPhotoBrowser: 193f779936f49a3f485100009efb8e0b8b3fb2fe
 
-PODFILE CHECKSUM: 9fb8c7b2ba40963acb3c8857eba6474478a0bb52
+PODFILE CHECKSUM: afcb4af8727e8f4559dad60aa2d38053397c3e72
 
 COCOAPODS: 1.10.0
