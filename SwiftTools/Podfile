@@ -30,6 +30,8 @@ target 'SwiftTools' do
 
   pod 'Cache', '~> 6.0.0'
   
+  pod 'ZLPhotoBrowser', '~> 4.1.5'
+
   
   #OC
   pod 'MJRefresh'
