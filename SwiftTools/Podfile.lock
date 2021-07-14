@@ -27,9 +27,9 @@ PODS:
   - SnapKit (5.0.1)
   - Starscream (4.0.4)
   - SwiftyJSON (4.3.0)
-  - ZLPhotoBrowser (4.1.5):
-    - ZLPhotoBrowser/Core (= 4.1.5)
-  - ZLPhotoBrowser/Core (4.1.5)
+  - ZLPhotoBrowser (4.1.6):
+    - ZLPhotoBrowser/Core (= 4.1.6)
+  - ZLPhotoBrowser/Core (4.1.6)
 
 DEPENDENCIES:
   - Cache (~> 6.0.0)
@@ -48,7 +48,7 @@ DEPENDENCIES:
   - SnapKit (~> 5.0.1)
   - Starscream (~> 4.0.4)
   - SwiftyJSON (~> 4.0)
-  - ZLPhotoBrowser
+  - ZLPhotoBrowser (~> 4.1.6)
 
 SPEC REPOS:
   trunk:
@@ -91,8 +91,8 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
-  ZLPhotoBrowser: 809878607ea92e9411c580797ce1be23896b8d7f
+  ZLPhotoBrowser: 193f779936f49a3f485100009efb8e0b8b3fb2fe
 
-PODFILE CHECKSUM: 0723760c3b644dad21463e9bb13984d5869d481b
+PODFILE CHECKSUM: 9fb8c7b2ba40963acb3c8857eba6474478a0bb52
 
 COCOAPODS: 1.10.0

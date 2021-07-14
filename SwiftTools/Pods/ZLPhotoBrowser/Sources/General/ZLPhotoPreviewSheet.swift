@@ -347,7 +347,7 @@ public class ZLPhotoPreviewSheet: UIView {
         }
     }
     
-    func hide() {
+    func hide(completion: ( () -> Void )? = nil) {
         if self.animate {
             var frame = self.baseView.frame
             frame.origin.y += self.baseViewHeight
@@ -356,10 +356,12 @@ public class ZLPhotoPreviewSheet: UIView {
                 self.baseView.frame = frame
             }) { (_) in
                 self.isHidden = true
+                completion?()
                 self.removeFromSuperview()
             }
         } else {
             self.isHidden = true
+            completion?()
             self.removeFromSuperview()
         }
         
@@ -378,8 +380,9 @@ public class ZLPhotoPreviewSheet: UIView {
     }
     
     @objc func tapAction(_ tap: UITapGestureRecognizer) {
-        self.cancelBlock?()
-        self.hide()
+        self.hide {
+            self.cancelBlock?()
+        }
     }
     
     @objc func cameraBtnClick() {
@@ -397,7 +400,7 @@ public class ZLPhotoPreviewSheet: UIView {
                 picker.allowsEditing = false
                 picker.videoQuality = .typeHigh
                 picker.sourceType = .camera
-                picker.cameraFlashMode = config.cameraFlashMode.imagePickerFlashMode
+                picker.cameraFlashMode = config.cameraConfiguration.flashMode.imagePickerFlashMode
                 var mediaTypes = [String]()
                 if config.allowTakePhoto {
                     mediaTypes.append("public.image")
@@ -422,8 +425,9 @@ public class ZLPhotoPreviewSheet: UIView {
     
     @objc func cancelBtnClick() {
         guard !self.arrSelectedModels.isEmpty else {
-            self.cancelBlock?()
-            self.hide()
+            self.hide {
+                self.cancelBlock?()
+            }
             return
         }
         self.requestSelectPhoto()
@@ -530,12 +534,35 @@ public class ZLPhotoPreviewSheet: UIView {
         
         hud.show(timeout: ZLPhotoConfiguration.default().timeout)
         
-        guard ZLPhotoConfiguration.default().shouldAnialysisAsset else {
+        let callback = { [weak self] (sucImages: [UIImage], sucAssets: [PHAsset], errorAssets: [PHAsset], errorIndexs: [Int]) in
             hud.hide()
-            self.selectImageBlock?([], self.arrSelectedModels.map { $0.asset }, self.isSelectOriginal)
-            self.arrSelectedModels.removeAll()
-            self.hide()
-            viewController?.dismiss(animated: true, completion: nil)
+            
+            func call() {
+                self?.selectImageBlock?(sucImages, sucAssets, self?.isSelectOriginal ?? false)
+                if !errorAssets.isEmpty {
+                    self?.selectImageRequestErrorBlock?(errorAssets, errorIndexs)
+                }
+            }
+            
+            if let vc = viewController {
+                self?.isHidden = true
+                self?.animate = false
+                vc.dismiss(animated: true) {
+                    call()
+                    self?.hide()
+                }
+            } else {
+                self?.hide(completion: {
+                    call()
+                })
+            }
+            
+            self?.arrSelectedModels.removeAll()
+            self?.arrDataSources.removeAll()
+        }
+        
+        guard ZLPhotoConfiguration.default().shouldAnialysisAsset else {
+            callback([], self.arrSelectedModels.map { $0.asset }, [], [])
             return
         }
         
@@ -547,7 +574,7 @@ public class ZLPhotoPreviewSheet: UIView {
         var sucCount = 0
         let totalCount = self.arrSelectedModels.count
         for (i, m) in self.arrSelectedModels.enumerated() {
-            let operation = ZLFetchImageOperation(model: m, isOriginal: self.isSelectOriginal) { [weak self] (image, asset) in
+            let operation = ZLFetchImageOperation(model: m, isOriginal: self.isSelectOriginal) { (image, asset) in
                 guard !timeout else { return }
                 
                 sucCount += 1
@@ -563,18 +590,13 @@ public class ZLPhotoPreviewSheet: UIView {
                 }
                 
                 guard sucCount >= totalCount else { return }
-                let sucImages = images.compactMap { $0 }
-                let sucAssets = assets.compactMap { $0 }
-                hud.hide()
                 
-                self?.selectImageBlock?(sucImages, sucAssets, self?.isSelectOriginal ?? false)
-                self?.arrSelectedModels.removeAll()
-                if !errorAssets.isEmpty {
-                    self?.selectImageRequestErrorBlock?(errorAssets, errorIndexs)
-                }
-                self?.arrDataSources.removeAll()
-                self?.hide()
-                viewController?.dismiss(animated: true, completion: nil)
+                callback(
+                    images.compactMap { $0 },
+                    assets.compactMap { $0 },
+                    errorAssets,
+                    errorIndexs
+                )
             }
             self.fetchImageQueue.addOperation(operation)
         }
@@ -693,8 +715,9 @@ public class ZLPhotoPreviewSheet: UIView {
         }
         
         nav.cancelBlock = { [weak self] in
-            self?.cancelBlock?()
-            self?.hide()
+            self?.hide {
+                self?.cancelBlock?()
+            }
         }
         nav.isSelectedOriginal = self.isSelectOriginal
         nav.arrSelectedModels.removeAll()

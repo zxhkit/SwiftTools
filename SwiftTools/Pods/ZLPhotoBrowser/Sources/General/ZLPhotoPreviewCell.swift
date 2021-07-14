@@ -123,7 +123,7 @@ class ZLPreviewBaseCell: UICollectionViewCell {
 }
 
 
-// MARK: local and net image preview cell
+// MARK: local image preview cell
 class ZLLocalImagePreviewCell: ZLPreviewBaseCell {
     
     override var currentImage: UIImage? {
@@ -1059,8 +1059,10 @@ class ZLPreviewView: UIView {
             }
         } else {
             contenSize = frame.size
-            if frame.width < viewW || frame.height < viewH {
+            if frame.height < viewH {
                 self.containerView.center = CGPoint(x: viewW / 2, y: viewH / 2)
+            } else {
+                self.containerView.frame = CGRect(origin: CGPoint(x: (viewW-frame.width)/2, y: 0), size: frame.size)
             }
         }
         

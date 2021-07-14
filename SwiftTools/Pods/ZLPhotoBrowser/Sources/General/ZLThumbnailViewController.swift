@@ -365,8 +365,9 @@ class ZLThumbnailViewController: UIViewController {
             
             self.embedNavView?.cancelBlock = { [weak self] in
                 let nav = self?.navigationController as? ZLImageNavController
-                nav?.cancelBlock?()
-                nav?.dismiss(animated: true, completion: nil)
+                nav?.dismiss(animated: true, completion: {
+                    nav?.cancelBlock?()
+                })
             }
             
             self.view.addSubview(self.embedNavView!)
@@ -706,7 +707,7 @@ class ZLThumbnailViewController: UIViewController {
                 picker.allowsEditing = false
                 picker.videoQuality = .typeHigh
                 picker.sourceType = .camera
-                picker.cameraFlashMode = config.cameraFlashMode.imagePickerFlashMode
+                picker.cameraFlashMode = config.cameraConfiguration.flashMode.imagePickerFlashMode
                 var mediaTypes = [String]()
                 if config.allowTakePhoto {
                     mediaTypes.append("public.image")
