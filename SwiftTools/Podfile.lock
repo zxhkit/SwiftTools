@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.2.2)
   - Cache (6.0.0)
   - Closures (0.7)
+  - ESTabBarController-swift (2.8.0)
   - FLEX (4.4.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -12,6 +13,7 @@ PODS:
   - Kingfisher (5.15.0):
     - Kingfisher/Core (= 5.15.0)
   - Kingfisher/Core (5.15.0)
+  - lottie-ios (3.2.3)
   - MJRefresh (3.5.0)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
@@ -48,13 +50,15 @@ PODS:
 DEPENDENCIES:
   - Cache (~> 6.0.0)
   - Closures (~> 0.7)
+  - ESTabBarController-swift (= 2.8.0)
   - FLEX (= 4.4.1)
   - FMDB (~> 2.7.5)
   - HandyJSON (~> 5.0.2)
   - JXPagingView/Paging (~> 2.0.13)
   - JXSegmentedView (~> 1.2.7)
   - Kingfisher (~> 5.15.0)
-  - MJRefresh
+  - lottie-ios (= 3.2.3)
+  - MJRefresh (~> 3.5.0)
   - Moya (~> 14.0)
   - NVActivityIndicatorView (~> 5.1.1)
   - ObjectMapper (~> 3.5)
@@ -72,12 +76,14 @@ SPEC REPOS:
     - Alamofire
     - Cache
     - Closures
+    - ESTabBarController-swift
     - FLEX
     - FMDB
     - HandyJSON
     - JXPagingView
     - JXSegmentedView
     - Kingfisher
+    - lottie-ios
     - MJRefresh
     - Moya
     - NVActivityIndicatorView
@@ -98,12 +104,14 @@ SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   Closures: a83b9892a5b1c4125a9dfcd53e2754db5d7f6d22
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
   FLEX: 7ca2c8cd3a435ff501ff6d2f2141e9bdc934eaab
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
   JXSegmentedView: eb1cad21f57c2543c00c3e08b8fd3c7ca54f5acd
   Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
@@ -120,6 +128,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   ZLPhotoBrowser: 193f779936f49a3f485100009efb8e0b8b3fb2fe
 
-PODFILE CHECKSUM: afcb4af8727e8f4559dad60aa2d38053397c3e72
+PODFILE CHECKSUM: e6f7582972382d78b7efebb4831c2f859dc496bb
 
 COCOAPODS: 1.10.0

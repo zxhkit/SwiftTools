@@ -32,11 +32,13 @@ target 'SwiftTools' do
   
   pod 'ZLPhotoBrowser', '~> 4.1.6'
   pod 'NVActivityIndicatorView', '~> 5.1.1'
+  pod 'lottie-ios', '3.2.3'
+  pod "ESTabBarController-swift", '2.8.0'
   
   #OC
   pod 'FLEX', '4.4.1', :configurations => ['Debug']
   pod 'SVGAPlayer', '~> 2.5.7'
-  pod 'MJRefresh'
+  pod 'MJRefresh', '~> 3.5.0'
 
 
 
