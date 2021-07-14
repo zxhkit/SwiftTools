@@ -16,6 +16,7 @@
 		325757552695D07E0049177C /* JJBaseToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325757542695D07E0049177C /* JJBaseToast.swift */; };
 		325757572695D0980049177C /* JJToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325757562695D0980049177C /* JJToast.swift */; };
 		325757592695D7C70049177C /* JJCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325757582695D7C70049177C /* JJCustomView.swift */; };
+		3261A983269DC01800C4B5F2 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261A982269DC01800C4B5F2 /* NetworkTools.swift */; };
 		327FF0012689F24400BC3BC2 /* JJTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FF0002689F24400BC3BC2 /* JJTableView.swift */; };
 		327FF0032689F5A000BC3BC2 /* JJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FF0022689F5A000BC3BC2 /* JJBaseViewController.swift */; };
 		327FF0052689F61400BC3BC2 /* JJLetCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FF0042689F61400BC3BC2 /* JJLetCodeViewController.swift */; };
@@ -30,6 +31,7 @@
 		327FF01D268B4BC900BC3BC2 /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FF01C268B4BC900BC3BC2 /* APIUser.swift */; };
 		327FF01F268B4BD700BC3BC2 /* APIShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FF01E268B4BD700BC3BC2 /* APIShops.swift */; };
 		32858D9C2692E8C800B9E8B3 /* JJTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32858D9B2692E8C800B9E8B3 /* JJTestViewController.swift */; };
+		328A4A23269E7C67007A9235 /* JJMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A22269E7C67007A9235 /* JJMethodViewController.swift */; };
 		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
 		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
 		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
@@ -54,6 +56,7 @@
 		325757542695D07E0049177C /* JJBaseToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBaseToast.swift; sourceTree = "<group>"; };
 		325757562695D0980049177C /* JJToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJToast.swift; sourceTree = "<group>"; };
 		325757582695D7C70049177C /* JJCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJCustomView.swift; sourceTree = "<group>"; };
+		3261A982269DC01800C4B5F2 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		327FF0002689F24400BC3BC2 /* JJTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTableView.swift; sourceTree = "<group>"; };
 		327FF0022689F5A000BC3BC2 /* JJBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBaseViewController.swift; sourceTree = "<group>"; };
 		327FF0042689F61400BC3BC2 /* JJLetCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJLetCodeViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		327FF01C268B4BC900BC3BC2 /* APIUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
 		327FF01E268B4BD700BC3BC2 /* APIShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIShops.swift; sourceTree = "<group>"; };
 		32858D9B2692E8C800B9E8B3 /* JJTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTestViewController.swift; sourceTree = "<group>"; };
+		328A4A22269E7C67007A9235 /* JJMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJMethodViewController.swift; sourceTree = "<group>"; };
 		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
 		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
 		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 		327FF006268AAEE500BC3BC2 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				328A4A21269E7C41007A9235 /* Method */,
 				322B64F62698172900FDA10B /* ObjectMapper */,
 				325757472695B8E10049177C /* json处理 */,
 				327FF00D268AE3AB00BC3BC2 /* 网络请求 */,
@@ -195,6 +200,7 @@
 				327FF010268AEE6200BC3BC2 /* API.swift */,
 				327FF012268AEE7600BC3BC2 /* NetworkManager.swift */,
 				327FF014268AEE9100BC3BC2 /* MoyaConfig.swift */,
+				3261A982269DC01800C4B5F2 /* NetworkTools.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -208,6 +214,14 @@
 				327FF01E268B4BD700BC3BC2 /* APIShops.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		328A4A21269E7C41007A9235 /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A22269E7C67007A9235 /* JJMethodViewController.swift */,
+			);
+			path = Method;
 			sourceTree = "<group>";
 		};
 		32FC6154265B54C700A99A1F /* Main */ = {
@@ -443,6 +457,7 @@
 			files = (
 				327FF00F268AE3D300BC3BC2 /* JJNetWorkViewController.swift in Sources */,
 				325757592695D7C70049177C /* JJCustomView.swift in Sources */,
+				3261A983269DC01800C4B5F2 /* NetworkTools.swift in Sources */,
 				7D4F07D824FFEA0300AA0425 /* ViewController.swift in Sources */,
 				325757532695BED70049177C /* MBProgressHUD.m in Sources */,
 				327FF019268B1B2D00BC3BC2 /* JJNetworkManager.swift in Sources */,
@@ -464,6 +479,7 @@
 				327FF01D268B4BC900BC3BC2 /* APIUser.swift in Sources */,
 				322B64FA2698186F00FDA10B /* ObjectMapperModel.swift in Sources */,
 				327FF00B268AB38C00BC3BC2 /* JJAppConfig.swift in Sources */,
+				328A4A23269E7C67007A9235 /* JJMethodViewController.swift in Sources */,
 				32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */,
 				327FF0052689F61400BC3BC2 /* JJLetCodeViewController.swift in Sources */,
 				327FF01F268B4BD700BC3BC2 /* APIShops.swift in Sources */,

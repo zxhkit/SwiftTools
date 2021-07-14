@@ -31,7 +31,7 @@ class JJHomeViewController: JJBaseViewController {
     
     
     
-    private var data: Array = ["测试","算法","网络请求","json处理","ObjectMapper","预留","预"]
+    private var data: Array = ["测试","算法","网络请求","json处理","ObjectMapper","基本方法验证","预"]
     
     
     
@@ -99,8 +99,8 @@ extension JJHomeViewController: UITableViewDelegate, UITableViewDataSource{
             let vc = JJObjectMapperViewController()
             navigationController?.pushViewController(vc, animated: true)
             
-        case "预留":
-            let vc = JJObjectMapperViewController()
+        case "基本方法验证":
+            let vc = JJMethodViewController()
             navigationController?.pushViewController(vc, animated: true)
             
         case "预":

@@ -31,6 +31,19 @@ class JJTestViewController: JJBaseViewController {
 }
 
 
+class A {
+    fileprivate func study()  {
+        print("爱学习")
+    }
+}
+
+class B:A {
+    func show() {
+        study()
+    }
+}
+
+
 
 // 定义类
 class 类名 {
