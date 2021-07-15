@@ -32,10 +32,10 @@ class JJFileManager: NSObject {
      
      */
     /// 获取沙盒Document路径
-    static func documentPath() -> String {
+    static func documentPath() -> String? {
         let documentPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
         //let path = NSHomeDirectory() + "/Documents"
-        return documentPath.first ?? ""
+        return documentPath.first
     }
     
     static func libraryPath() -> String {

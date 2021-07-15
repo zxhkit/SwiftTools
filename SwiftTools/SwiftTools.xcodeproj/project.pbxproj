@@ -64,6 +64,10 @@
 		328A4A74269FDD31007A9235 /* SmoothListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A73269FDD31007A9235 /* SmoothListViewController.swift */; };
 		328A4A76269FDDDC007A9235 /* ListCacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A75269FDDDC007A9235 /* ListCacheViewController.swift */; };
 		328A4A7926A00882007A9235 /* JJFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A7826A00882007A9235 /* JJFileManager.swift */; };
+		328A4A7C26A0126B007A9235 /* JJLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A7B26A0126B007A9235 /* JJLogManager.swift */; };
+		328A4A7E26A01C01007A9235 /* JJLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A7D26A01C01007A9235 /* JJLogFormatter.swift */; };
+		328A4A8026A03100007A9235 /* JJLogFileManagerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A7F26A03100007A9235 /* JJLogFileManagerDefault.swift */; };
+		328A4A8226A0327D007A9235 /* Date+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A8126A0327D007A9235 /* Date+Extra.swift */; };
 		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
 		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
 		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
@@ -136,6 +140,10 @@
 		328A4A73269FDD31007A9235 /* SmoothListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothListViewController.swift; sourceTree = "<group>"; };
 		328A4A75269FDDDC007A9235 /* ListCacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCacheViewController.swift; sourceTree = "<group>"; };
 		328A4A7826A00882007A9235 /* JJFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJFileManager.swift; sourceTree = "<group>"; };
+		328A4A7B26A0126B007A9235 /* JJLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJLogManager.swift; sourceTree = "<group>"; };
+		328A4A7D26A01C01007A9235 /* JJLogFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJLogFormatter.swift; sourceTree = "<group>"; };
+		328A4A7F26A03100007A9235 /* JJLogFileManagerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJLogFileManagerDefault.swift; sourceTree = "<group>"; };
+		328A4A8126A0327D007A9235 /* Date+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extra.swift"; sourceTree = "<group>"; };
 		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
 		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
 		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
@@ -432,6 +440,9 @@
 		328A4A7A26A00EF3007A9235 /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				328A4A7B26A0126B007A9235 /* JJLogManager.swift */,
+				328A4A7D26A01C01007A9235 /* JJLogFormatter.swift */,
+				328A4A7F26A03100007A9235 /* JJLogFileManagerDefault.swift */,
 			);
 			path = Log;
 			sourceTree = "<group>";
@@ -534,6 +545,7 @@
 				328A4A36269EE87B007A9235 /* Extensions+File.swift */,
 				328A4A32269EE6DA007A9235 /* UIColor+Extra.swift */,
 				328A4A34269EE807007A9235 /* String+Extra.swift */,
+				328A4A8126A0327D007A9235 /* Date+Extra.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -672,6 +684,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328A4A7C26A0126B007A9235 /* JJLogManager.swift in Sources */,
 				328A4A35269EE807007A9235 /* String+Extra.swift in Sources */,
 				328A4A5E269FD286007A9235 /* VCViewController.swift in Sources */,
 				328A4A74269FDD31007A9235 /* SmoothListViewController.swift in Sources */,
@@ -691,11 +704,13 @@
 				328A4A51269FC922007A9235 /* RefreshViewController.swift in Sources */,
 				327FF019268B1B2D00BC3BC2 /* JJNetworkManager.swift in Sources */,
 				328A4A60269FD412007A9235 /* VCListViewController.swift in Sources */,
+				328A4A8226A0327D007A9235 /* Date+Extra.swift in Sources */,
 				7D4F07D424FFEA0300AA0425 /* AppDelegate.swift in Sources */,
 				328A4A72269FDCB8007A9235 /* SmoothViewController.swift in Sources */,
 				328A4A4A269F0AA2007A9235 /* DetailViewController.swift in Sources */,
 				321CC6502576451000F48FD3 /* WebSocketManager.swift in Sources */,
 				325757552695D07E0049177C /* JJBaseToast.swift in Sources */,
+				328A4A7E26A01C01007A9235 /* JJLogFormatter.swift in Sources */,
 				327FF0012689F24400BC3BC2 /* JJTableView.swift in Sources */,
 				328A4A6C269FDAD3007A9235 /* HeightChangeAnimationTableHeaderView.swift in Sources */,
 				32858D9C2692E8C800B9E8B3 /* JJTestViewController.swift in Sources */,
@@ -715,6 +730,7 @@
 				327FF015268AEE9100BC3BC2 /* MoyaConfig.swift in Sources */,
 				327FF0032689F5A000BC3BC2 /* JJBaseViewController.swift in Sources */,
 				32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */,
+				328A4A8026A03100007A9235 /* JJLogFileManagerDefault.swift in Sources */,
 				327FF01D268B4BC900BC3BC2 /* APIUser.swift in Sources */,
 				322B64FA2698186F00FDA10B /* ObjectMapperModel.swift in Sources */,
 				328A4A2D269ECED7007A9235 /* JJCycleCell.swift in Sources */,
