@@ -39,6 +39,14 @@
 		328A4A33269EE6DA007A9235 /* UIColor+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A32269EE6DA007A9235 /* UIColor+Extra.swift */; };
 		328A4A35269EE807007A9235 /* String+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A34269EE807007A9235 /* String+Extra.swift */; };
 		328A4A37269EE87B007A9235 /* Extensions+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A36269EE87B007A9235 /* Extensions+File.swift */; };
+		328A4A3A269EF746007A9235 /* JJPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A39269EF746007A9235 /* JJPagerViewController.swift */; };
+		328A4A41269EFA7D007A9235 /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A40269EFA7D007A9235 /* ZoomViewController.swift */; };
+		328A4A43269F0810007A9235 /* PagerBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A42269F0810007A9235 /* PagerBaseViewController.swift */; };
+		328A4A46269F091B007A9235 /* PagingViewTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A45269F091B007A9235 /* PagingViewTableHeaderView.swift */; };
+		328A4A48269F096A007A9235 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A47269F096A007A9235 /* ListViewController.swift */; };
+		328A4A4A269F0AA2007A9235 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A49269F0AA2007A9235 /* DetailViewController.swift */; };
+		328A4A4C269F0C39007A9235 /* lufei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 328A4A4B269F0C39007A9235 /* lufei.jpg */; };
+		328A4A4E269F0C99007A9235 /* JJZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A4D269F0C99007A9235 /* JJZoomViewController.swift */; };
 		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
 		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
 		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
@@ -86,6 +94,14 @@
 		328A4A32269EE6DA007A9235 /* UIColor+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extra.swift"; sourceTree = "<group>"; };
 		328A4A34269EE807007A9235 /* String+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extra.swift"; sourceTree = "<group>"; };
 		328A4A36269EE87B007A9235 /* Extensions+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+File.swift"; sourceTree = "<group>"; };
+		328A4A39269EF746007A9235 /* JJPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJPagerViewController.swift; sourceTree = "<group>"; };
+		328A4A40269EFA7D007A9235 /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
+		328A4A42269F0810007A9235 /* PagerBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerBaseViewController.swift; sourceTree = "<group>"; };
+		328A4A45269F091B007A9235 /* PagingViewTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewTableHeaderView.swift; sourceTree = "<group>"; };
+		328A4A47269F096A007A9235 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		328A4A49269F0AA2007A9235 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		328A4A4B269F0C39007A9235 /* lufei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lufei.jpg; sourceTree = "<group>"; };
+		328A4A4D269F0C99007A9235 /* JJZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJZoomViewController.swift; sourceTree = "<group>"; };
 		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
 		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
 		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +188,7 @@
 		327FF006268AAEE500BC3BC2 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				328A4A38269EF724007A9235 /* 分页 */,
 				328A4A27269EC605007A9235 /* 轮播图 */,
 				328A4A24269E8B15007A9235 /* ZL图片选择 */,
 				328A4A21269E7C41007A9235 /* Method */,
@@ -256,6 +273,37 @@
 				328A4A2C269ECED7007A9235 /* JJCycleCell.swift */,
 			);
 			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		328A4A38269EF724007A9235 /* 分页 */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A39269EF746007A9235 /* JJPagerViewController.swift */,
+				328A4A44269F0905007A9235 /* Common */,
+				328A4A3F269EFA6B007A9235 /* Zoom */,
+			);
+			path = "分页";
+			sourceTree = "<group>";
+		};
+		328A4A3F269EFA6B007A9235 /* Zoom */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A40269EFA7D007A9235 /* ZoomViewController.swift */,
+				328A4A4D269F0C99007A9235 /* JJZoomViewController.swift */,
+			);
+			path = Zoom;
+			sourceTree = "<group>";
+		};
+		328A4A44269F0905007A9235 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A4B269F0C39007A9235 /* lufei.jpg */,
+				328A4A42269F0810007A9235 /* PagerBaseViewController.swift */,
+				328A4A45269F091B007A9235 /* PagingViewTableHeaderView.swift */,
+				328A4A47269F096A007A9235 /* ListViewController.swift */,
+				328A4A49269F0AA2007A9235 /* DetailViewController.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		32FC6154265B54C700A99A1F /* Main */ = {
@@ -438,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D4F07E024FFEA0500AA0425 /* LaunchScreen.storyboard in Resources */,
+				328A4A4C269F0C39007A9235 /* lufei.jpg in Resources */,
 				7D4F07DD24FFEA0500AA0425 /* Assets.xcassets in Resources */,
 				7D4F07DB24FFEA0300AA0425 /* Main.storyboard in Resources */,
 			);
@@ -493,14 +542,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				328A4A35269EE807007A9235 /* String+Extra.swift in Sources */,
+				328A4A4E269F0C99007A9235 /* JJZoomViewController.swift in Sources */,
+				328A4A43269F0810007A9235 /* PagerBaseViewController.swift in Sources */,
 				327FF00F268AE3D300BC3BC2 /* JJNetWorkViewController.swift in Sources */,
 				325757592695D7C70049177C /* JJCustomView.swift in Sources */,
 				3261A983269DC01800C4B5F2 /* NetworkTools.swift in Sources */,
+				328A4A46269F091B007A9235 /* PagingViewTableHeaderView.swift in Sources */,
 				7D4F07D824FFEA0300AA0425 /* ViewController.swift in Sources */,
 				325757532695BED70049177C /* MBProgressHUD.m in Sources */,
 				328A4A26269E8B47007A9235 /* JJPhotoPickerViewController.swift in Sources */,
 				327FF019268B1B2D00BC3BC2 /* JJNetworkManager.swift in Sources */,
 				7D4F07D424FFEA0300AA0425 /* AppDelegate.swift in Sources */,
+				328A4A4A269F0AA2007A9235 /* DetailViewController.swift in Sources */,
 				321CC6502576451000F48FD3 /* WebSocketManager.swift in Sources */,
 				325757552695D07E0049177C /* JJBaseToast.swift in Sources */,
 				327FF0012689F24400BC3BC2 /* JJTableView.swift in Sources */,
@@ -510,6 +563,7 @@
 				322B646326968E2E00FDA10B /* JsonModel.swift in Sources */,
 				328A4A2B269ECEC4007A9235 /* JJCycleView.swift in Sources */,
 				327FF009268AAF0F00BC3BC2 /* JJBaseNavigationView.swift in Sources */,
+				328A4A48269F096A007A9235 /* ListViewController.swift in Sources */,
 				327FF011268AEE6200BC3BC2 /* API.swift in Sources */,
 				325757492695B9070049177C /* JJJsonViewController.swift in Sources */,
 				322B64F82698176800FDA10B /* JJObjectMapperViewController.swift in Sources */,
@@ -523,6 +577,8 @@
 				327FF00B268AB38C00BC3BC2 /* JJAppConfig.swift in Sources */,
 				328A4A29269EC638007A9235 /* JJCycleViewController.swift in Sources */,
 				328A4A23269E7C67007A9235 /* JJMethodViewController.swift in Sources */,
+				328A4A41269EFA7D007A9235 /* ZoomViewController.swift in Sources */,
+				328A4A3A269EF746007A9235 /* JJPagerViewController.swift in Sources */,
 				32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */,
 				327FF0052689F61400BC3BC2 /* JJLetCodeViewController.swift in Sources */,
 				327FF01F268B4BD700BC3BC2 /* APIShops.swift in Sources */,

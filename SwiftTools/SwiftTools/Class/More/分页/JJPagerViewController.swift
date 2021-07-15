@@ -1,23 +1,15 @@
 //
-//  JJHomeViewController.swift
+//  JJPagerViewController.swift
 //  SwiftTools
 //
-//  Created by 播呗网络 on 2021/5/24.
+//  Created by 播呗网络 on 2021/7/14.
 //  Copyright © 2021 xuanhe. All rights reserved.
 //
 
 import UIKit
-import SnapKit
 
-class JJHomeViewController: JJBaseViewController {
-    
-    lazy var line: UIView = {
-        let ln = UIView()
-        //设置
-        ln.backgroundColor = UIColor.gray
-        return ln
-    }()
-    
+class JJPagerViewController: JJBaseViewController {
+
     private lazy var tableView: JJTableView = {
         let tab = JJTableView(frame: CGRect.zero, style: UITableView.Style.plain)
         tab.delegate = self
@@ -28,41 +20,27 @@ class JJHomeViewController: JJBaseViewController {
         return tab
     }()
     
-    
-    
-    
-    private var data:[String] = ["测试","算法","网络请求","json处理","ObjectMapper","基本方法验证","ZL图片选择","轮播图",
-                                 "分页pager"
-    
-    ]
-    
-    
+    private var data:[String] = ["JJ头部缩放","头部缩放","主页下拉刷新/列表上拉加载更多","列表下拉刷新","导航栏隐藏","CollectionView列表示例","列表是VC示例","CategoryView嵌套PagingVIew","HeaderView高度改变示例","HeaderView高度改变示例(动画)","悬浮Header位置调整","滚动延续","列表缓存功能"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationViewTitle("分页Pager")
         
-        self.navigationCustomView.isHidden = false
-        self.setupNavigationViewTitle("首页")
-        self.navigationCustomView.backBtn.isHidden = true
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.left.right.equalTo(self.view);
             make.bottom.equalTo(self.view).offset(-kTabBarHeight);
             make.top.equalTo(self.view).offset(kNavBarHeight);
         }
-        
-        
-        
+        // Do any additional setup after loading the view.
     }
     
-    
-    
-    
+
 }
 
 
 
-extension JJHomeViewController: UITableViewDelegate, UITableViewDataSource{
+extension JJPagerViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.data.count
     }
@@ -82,43 +60,50 @@ extension JJHomeViewController: UITableViewDelegate, UITableViewDataSource{
         
         let str = self.data[indexPath.row]
         switch str {
-        case "测试":
-            let vc = JJTestViewController()
+        case "JJ头部缩放":
+            let vc = JJZoomViewController()
             navigationController?.pushViewController(vc, animated: true)
-            
-        case "算法":
+        case "头部缩放":
+            let vc = ZoomViewController()
+            navigationController?.pushViewController(vc, animated: true)
+      
+        case "主页下拉刷新/列表上拉加载更多":
             let vc = JJLetCodeViewController()
             navigationController?.pushViewController(vc, animated: true)
           
-        case "网络请求":
+        case "列表下拉刷新":
             let vc = JJNetWorkViewController()
             navigationController?.pushViewController(vc, animated: true)
           
-        case "json处理":
+        case "导航栏隐藏":
             let vc = JJJsonViewController()
             navigationController?.pushViewController(vc, animated: true)
             
-        case "ObjectMapper":
+        case "CollectionView列表示例":
             let vc = JJObjectMapperViewController()
             navigationController?.pushViewController(vc, animated: true)
             
-        case "基本方法验证":
+        case "列表是VC示例":
             let vc = JJMethodViewController()
             navigationController?.pushViewController(vc, animated: true)
-            
-        case "ZL图片选择":
+        case "CategoryView嵌套PagingVIew":
             let vc = JJPhotoPickerViewController()
             navigationController?.pushViewController(vc, animated: true)
-            
-            
-        case "轮播图":
+        case "HeaderView高度改变示例":
             let vc = JJCycleViewController()
             navigationController?.pushViewController(vc, animated: true)
-        case "分页pager":
-            let vc = JJPagerViewController()
+        case "HeaderView高度改变示例(动画)":
+            let vc = JJCycleViewController()
             navigationController?.pushViewController(vc, animated: true)
-            
-            
+        case "悬浮Header位置调整":
+            let vc = JJCycleViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case "滚动延续":
+            let vc = JJCycleViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case "列表缓存功能":
+            let vc = JJCycleViewController()
+            navigationController?.pushViewController(vc, animated: true)
             
         default:
             break
@@ -128,3 +113,6 @@ extension JJHomeViewController: UITableViewDelegate, UITableViewDataSource{
     
     
 }
+
+
+
