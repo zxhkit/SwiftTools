@@ -63,6 +63,7 @@
 		328A4A72269FDCB8007A9235 /* SmoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A71269FDCB8007A9235 /* SmoothViewController.swift */; };
 		328A4A74269FDD31007A9235 /* SmoothListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A73269FDD31007A9235 /* SmoothListViewController.swift */; };
 		328A4A76269FDDDC007A9235 /* ListCacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A75269FDDDC007A9235 /* ListCacheViewController.swift */; };
+		328A4A7926A00882007A9235 /* JJFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A7826A00882007A9235 /* JJFileManager.swift */; };
 		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
 		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
 		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
@@ -134,6 +135,7 @@
 		328A4A71269FDCB8007A9235 /* SmoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothViewController.swift; sourceTree = "<group>"; };
 		328A4A73269FDD31007A9235 /* SmoothListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothListViewController.swift; sourceTree = "<group>"; };
 		328A4A75269FDDDC007A9235 /* ListCacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCacheViewController.swift; sourceTree = "<group>"; };
+		328A4A7826A00882007A9235 /* JJFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJFileManager.swift; sourceTree = "<group>"; };
 		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
 		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
 		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 		328A4A77269FEA2C007A9235 /* File */ = {
 			isa = PBXGroup;
 			children = (
+				328A4A7826A00882007A9235 /* JJFileManager.swift */,
 			);
 			path = File;
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 				328A4A65269FD8DD007A9235 /* NestSubjectViewController.swift in Sources */,
 				325757592695D7C70049177C /* JJCustomView.swift in Sources */,
 				328A4A68269FDA4A007A9235 /* HeightChangeViewController.swift in Sources */,
+				328A4A7926A00882007A9235 /* JJFileManager.swift in Sources */,
 				3261A983269DC01800C4B5F2 /* NetworkTools.swift in Sources */,
 				328A4A46269F091B007A9235 /* PagingViewTableHeaderView.swift in Sources */,
 				328A4A76269FDDDC007A9235 /* ListCacheViewController.swift in Sources */,
