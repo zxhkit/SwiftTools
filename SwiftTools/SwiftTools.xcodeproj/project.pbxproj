@@ -202,8 +202,8 @@
 		327FEFFE2689F21300BC3BC2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				328A4A77269FEA2C007A9235 /* File */,
 				3257574A2695BDA00049177C /* JJToast */,
-				327FEFFF2689F21C00BC3BC2 /* Base */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -418,6 +418,13 @@
 			path = "延续滚动";
 			sourceTree = "<group>";
 		};
+		328A4A77269FEA2C007A9235 /* File */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
 		32FC6154265B54C700A99A1F /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,6 +502,7 @@
 		7D4F090C24FFF6C900AA0425 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				327FEFFF2689F21C00BC3BC2 /* Base */,
 				327FEFFE2689F21300BC3BC2 /* Common */,
 				7D4F090E24FFF6E300AA0425 /* Extensions */,
 			);

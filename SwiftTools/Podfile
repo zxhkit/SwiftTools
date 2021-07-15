@@ -61,6 +61,7 @@ target 'SwiftTools' do
 #  pod 'MonkeyKing'
 #  pod 'Tiercel', '~> 1.2.3'
 #  pod 'Repeat'
+#  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
 
   
 end
