@@ -47,6 +47,22 @@
 		328A4A4A269F0AA2007A9235 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A49269F0AA2007A9235 /* DetailViewController.swift */; };
 		328A4A4C269F0C39007A9235 /* lufei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 328A4A4B269F0C39007A9235 /* lufei.jpg */; };
 		328A4A4E269F0C99007A9235 /* JJZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A4D269F0C99007A9235 /* JJZoomViewController.swift */; };
+		328A4A51269FC922007A9235 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A50269FC922007A9235 /* RefreshViewController.swift */; };
+		328A4A53269FCDBC007A9235 /* ListRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A52269FCDBC007A9235 /* ListRefreshViewController.swift */; };
+		328A4A56269FCEA9007A9235 /* NaviHiddenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A55269FCEA9007A9235 /* NaviHiddenViewController.swift */; };
+		328A4A59269FCFC4007A9235 /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A58269FCFC4007A9235 /* CollectionViewViewController.swift */; };
+		328A4A5B269FD068007A9235 /* ListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A5A269FD068007A9235 /* ListCollectionViewController.swift */; };
+		328A4A5E269FD286007A9235 /* VCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A5D269FD286007A9235 /* VCViewController.swift */; };
+		328A4A60269FD412007A9235 /* VCListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A5F269FD412007A9235 /* VCListViewController.swift */; };
+		328A4A63269FD791007A9235 /* NestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A62269FD791007A9235 /* NestViewController.swift */; };
+		328A4A65269FD8DD007A9235 /* NestSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A64269FD8DD007A9235 /* NestSubjectViewController.swift */; };
+		328A4A68269FDA4A007A9235 /* HeightChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A67269FDA4A007A9235 /* HeightChangeViewController.swift */; };
+		328A4A6A269FDAB9007A9235 /* HeightChangeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A69269FDAB9007A9235 /* HeightChangeAnimationViewController.swift */; };
+		328A4A6C269FDAD3007A9235 /* HeightChangeAnimationTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A6B269FDAD3007A9235 /* HeightChangeAnimationTableHeaderView.swift */; };
+		328A4A6F269FDC0F007A9235 /* HeaderPositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A6E269FDC0F007A9235 /* HeaderPositionViewController.swift */; };
+		328A4A72269FDCB8007A9235 /* SmoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A71269FDCB8007A9235 /* SmoothViewController.swift */; };
+		328A4A74269FDD31007A9235 /* SmoothListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A73269FDD31007A9235 /* SmoothListViewController.swift */; };
+		328A4A76269FDDDC007A9235 /* ListCacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A75269FDDDC007A9235 /* ListCacheViewController.swift */; };
 		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
 		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
 		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
@@ -102,6 +118,22 @@
 		328A4A49269F0AA2007A9235 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		328A4A4B269F0C39007A9235 /* lufei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lufei.jpg; sourceTree = "<group>"; };
 		328A4A4D269F0C99007A9235 /* JJZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJZoomViewController.swift; sourceTree = "<group>"; };
+		328A4A50269FC922007A9235 /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
+		328A4A52269FCDBC007A9235 /* ListRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRefreshViewController.swift; sourceTree = "<group>"; };
+		328A4A55269FCEA9007A9235 /* NaviHiddenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviHiddenViewController.swift; sourceTree = "<group>"; };
+		328A4A58269FCFC4007A9235 /* CollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewViewController.swift; sourceTree = "<group>"; };
+		328A4A5A269FD068007A9235 /* ListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewController.swift; sourceTree = "<group>"; };
+		328A4A5D269FD286007A9235 /* VCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCViewController.swift; sourceTree = "<group>"; };
+		328A4A5F269FD412007A9235 /* VCListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCListViewController.swift; sourceTree = "<group>"; };
+		328A4A62269FD791007A9235 /* NestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestViewController.swift; sourceTree = "<group>"; };
+		328A4A64269FD8DD007A9235 /* NestSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestSubjectViewController.swift; sourceTree = "<group>"; };
+		328A4A67269FDA4A007A9235 /* HeightChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightChangeViewController.swift; sourceTree = "<group>"; };
+		328A4A69269FDAB9007A9235 /* HeightChangeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightChangeAnimationViewController.swift; sourceTree = "<group>"; };
+		328A4A6B269FDAD3007A9235 /* HeightChangeAnimationTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightChangeAnimationTableHeaderView.swift; sourceTree = "<group>"; };
+		328A4A6E269FDC0F007A9235 /* HeaderPositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPositionViewController.swift; sourceTree = "<group>"; };
+		328A4A71269FDCB8007A9235 /* SmoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothViewController.swift; sourceTree = "<group>"; };
+		328A4A73269FDD31007A9235 /* SmoothListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothListViewController.swift; sourceTree = "<group>"; };
+		328A4A75269FDDDC007A9235 /* ListCacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCacheViewController.swift; sourceTree = "<group>"; };
 		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
 		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
 		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
@@ -279,6 +311,14 @@
 			isa = PBXGroup;
 			children = (
 				328A4A39269EF746007A9235 /* JJPagerViewController.swift */,
+				328A4A70269FDCA2007A9235 /* 延续滚动 */,
+				328A4A6D269FDBF3007A9235 /* HeaderPosition */,
+				328A4A66269FDA36007A9235 /* HeightChange */,
+				328A4A61269FD775007A9235 /* CategorryNextPaging */,
+				328A4A5C269FD26C007A9235 /* VC */,
+				328A4A57269FCFB6007A9235 /* CollectionView */,
+				328A4A54269FCE97007A9235 /* 导航栏隐藏 */,
+				328A4A4F269FC8F3007A9235 /* Refresh */,
 				328A4A44269F0905007A9235 /* Common */,
 				328A4A3F269EFA6B007A9235 /* Zoom */,
 			);
@@ -302,8 +342,80 @@
 				328A4A45269F091B007A9235 /* PagingViewTableHeaderView.swift */,
 				328A4A47269F096A007A9235 /* ListViewController.swift */,
 				328A4A49269F0AA2007A9235 /* DetailViewController.swift */,
+				328A4A5A269FD068007A9235 /* ListCollectionViewController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		328A4A4F269FC8F3007A9235 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A50269FC922007A9235 /* RefreshViewController.swift */,
+				328A4A52269FCDBC007A9235 /* ListRefreshViewController.swift */,
+				328A4A75269FDDDC007A9235 /* ListCacheViewController.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		328A4A54269FCE97007A9235 /* 导航栏隐藏 */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A55269FCEA9007A9235 /* NaviHiddenViewController.swift */,
+			);
+			path = "导航栏隐藏";
+			sourceTree = "<group>";
+		};
+		328A4A57269FCFB6007A9235 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A58269FCFC4007A9235 /* CollectionViewViewController.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		328A4A5C269FD26C007A9235 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A5D269FD286007A9235 /* VCViewController.swift */,
+				328A4A5F269FD412007A9235 /* VCListViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		328A4A61269FD775007A9235 /* CategorryNextPaging */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A62269FD791007A9235 /* NestViewController.swift */,
+				328A4A64269FD8DD007A9235 /* NestSubjectViewController.swift */,
+			);
+			path = CategorryNextPaging;
+			sourceTree = "<group>";
+		};
+		328A4A66269FDA36007A9235 /* HeightChange */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A67269FDA4A007A9235 /* HeightChangeViewController.swift */,
+				328A4A69269FDAB9007A9235 /* HeightChangeAnimationViewController.swift */,
+				328A4A6B269FDAD3007A9235 /* HeightChangeAnimationTableHeaderView.swift */,
+			);
+			path = HeightChange;
+			sourceTree = "<group>";
+		};
+		328A4A6D269FDBF3007A9235 /* HeaderPosition */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A6E269FDC0F007A9235 /* HeaderPositionViewController.swift */,
+			);
+			path = HeaderPosition;
+			sourceTree = "<group>";
+		};
+		328A4A70269FDCA2007A9235 /* 延续滚动 */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A71269FDCB8007A9235 /* SmoothViewController.swift */,
+				328A4A73269FDD31007A9235 /* SmoothListViewController.swift */,
+			);
+			path = "延续滚动";
 			sourceTree = "<group>";
 		};
 		32FC6154265B54C700A99A1F /* Main */ = {
@@ -542,22 +654,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				328A4A35269EE807007A9235 /* String+Extra.swift in Sources */,
+				328A4A5E269FD286007A9235 /* VCViewController.swift in Sources */,
+				328A4A74269FDD31007A9235 /* SmoothListViewController.swift in Sources */,
 				328A4A4E269F0C99007A9235 /* JJZoomViewController.swift in Sources */,
 				328A4A43269F0810007A9235 /* PagerBaseViewController.swift in Sources */,
 				327FF00F268AE3D300BC3BC2 /* JJNetWorkViewController.swift in Sources */,
+				328A4A65269FD8DD007A9235 /* NestSubjectViewController.swift in Sources */,
 				325757592695D7C70049177C /* JJCustomView.swift in Sources */,
+				328A4A68269FDA4A007A9235 /* HeightChangeViewController.swift in Sources */,
 				3261A983269DC01800C4B5F2 /* NetworkTools.swift in Sources */,
 				328A4A46269F091B007A9235 /* PagingViewTableHeaderView.swift in Sources */,
+				328A4A76269FDDDC007A9235 /* ListCacheViewController.swift in Sources */,
 				7D4F07D824FFEA0300AA0425 /* ViewController.swift in Sources */,
 				325757532695BED70049177C /* MBProgressHUD.m in Sources */,
 				328A4A26269E8B47007A9235 /* JJPhotoPickerViewController.swift in Sources */,
+				328A4A51269FC922007A9235 /* RefreshViewController.swift in Sources */,
 				327FF019268B1B2D00BC3BC2 /* JJNetworkManager.swift in Sources */,
+				328A4A60269FD412007A9235 /* VCListViewController.swift in Sources */,
 				7D4F07D424FFEA0300AA0425 /* AppDelegate.swift in Sources */,
+				328A4A72269FDCB8007A9235 /* SmoothViewController.swift in Sources */,
 				328A4A4A269F0AA2007A9235 /* DetailViewController.swift in Sources */,
 				321CC6502576451000F48FD3 /* WebSocketManager.swift in Sources */,
 				325757552695D07E0049177C /* JJBaseToast.swift in Sources */,
 				327FF0012689F24400BC3BC2 /* JJTableView.swift in Sources */,
+				328A4A6C269FDAD3007A9235 /* HeightChangeAnimationTableHeaderView.swift in Sources */,
 				32858D9C2692E8C800B9E8B3 /* JJTestViewController.swift in Sources */,
+				328A4A56269FCEA9007A9235 /* NaviHiddenViewController.swift in Sources */,
 				325757572695D0980049177C /* JJToast.swift in Sources */,
 				327FF01B268B4BC000BC3BC2 /* APILogin.swift in Sources */,
 				322B646326968E2E00FDA10B /* JsonModel.swift in Sources */,
@@ -568,6 +690,8 @@
 				325757492695B9070049177C /* JJJsonViewController.swift in Sources */,
 				322B64F82698176800FDA10B /* JJObjectMapperViewController.swift in Sources */,
 				328A4A37269EE87B007A9235 /* Extensions+File.swift in Sources */,
+				328A4A53269FCDBC007A9235 /* ListRefreshViewController.swift in Sources */,
+				328A4A6A269FDAB9007A9235 /* HeightChangeAnimationViewController.swift in Sources */,
 				327FF015268AEE9100BC3BC2 /* MoyaConfig.swift in Sources */,
 				327FF0032689F5A000BC3BC2 /* JJBaseViewController.swift in Sources */,
 				32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */,
@@ -575,10 +699,14 @@
 				322B64FA2698186F00FDA10B /* ObjectMapperModel.swift in Sources */,
 				328A4A2D269ECED7007A9235 /* JJCycleCell.swift in Sources */,
 				327FF00B268AB38C00BC3BC2 /* JJAppConfig.swift in Sources */,
+				328A4A59269FCFC4007A9235 /* CollectionViewViewController.swift in Sources */,
+				328A4A63269FD791007A9235 /* NestViewController.swift in Sources */,
 				328A4A29269EC638007A9235 /* JJCycleViewController.swift in Sources */,
+				328A4A6F269FDC0F007A9235 /* HeaderPositionViewController.swift in Sources */,
 				328A4A23269E7C67007A9235 /* JJMethodViewController.swift in Sources */,
 				328A4A41269EFA7D007A9235 /* ZoomViewController.swift in Sources */,
 				328A4A3A269EF746007A9235 /* JJPagerViewController.swift in Sources */,
+				328A4A5B269FD068007A9235 /* ListCollectionViewController.swift in Sources */,
 				32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */,
 				327FF0052689F61400BC3BC2 /* JJLetCodeViewController.swift in Sources */,
 				327FF01F268B4BD700BC3BC2 /* APIShops.swift in Sources */,

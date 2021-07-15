@@ -68,41 +68,41 @@ extension JJPagerViewController: UITableViewDelegate, UITableViewDataSource{
             navigationController?.pushViewController(vc, animated: true)
       
         case "主页下拉刷新/列表上拉加载更多":
-            let vc = JJLetCodeViewController()
+            let vc = RefreshViewController()
             navigationController?.pushViewController(vc, animated: true)
           
         case "列表下拉刷新":
-            let vc = JJNetWorkViewController()
+            let vc = ListRefreshViewController()
             navigationController?.pushViewController(vc, animated: true)
           
         case "导航栏隐藏":
-            let vc = JJJsonViewController()
+            let vc = NaviHiddenViewController()
             navigationController?.pushViewController(vc, animated: true)
             
         case "CollectionView列表示例":
-            let vc = JJObjectMapperViewController()
+            let vc = CollectionViewViewController()
             navigationController?.pushViewController(vc, animated: true)
             
         case "列表是VC示例":
-            let vc = JJMethodViewController()
+            let vc = VCViewController()
             navigationController?.pushViewController(vc, animated: true)
         case "CategoryView嵌套PagingVIew":
-            let vc = JJPhotoPickerViewController()
+            let vc = NestViewController()
             navigationController?.pushViewController(vc, animated: true)
         case "HeaderView高度改变示例":
-            let vc = JJCycleViewController()
+            let vc = HeightChangeViewController()
             navigationController?.pushViewController(vc, animated: true)
         case "HeaderView高度改变示例(动画)":
-            let vc = JJCycleViewController()
+            let vc = HeightChangeAnimationViewController()
             navigationController?.pushViewController(vc, animated: true)
         case "悬浮Header位置调整":
-            let vc = JJCycleViewController()
+            let vc = HeaderPositionViewController()
             navigationController?.pushViewController(vc, animated: true)
         case "滚动延续":
-            let vc = JJCycleViewController()
+            let vc = SmoothViewController()
             navigationController?.pushViewController(vc, animated: true)
         case "列表缓存功能":
-            let vc = JJCycleViewController()
+            let vc = ListCacheViewController()
             navigationController?.pushViewController(vc, animated: true)
             
         default:
