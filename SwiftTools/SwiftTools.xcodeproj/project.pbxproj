@@ -204,6 +204,7 @@
 		327FEFFE2689F21300BC3BC2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				328A4A7A26A00EF3007A9235 /* Log */,
 				328A4A77269FEA2C007A9235 /* File */,
 				3257574A2695BDA00049177C /* JJToast */,
 			);
@@ -426,6 +427,13 @@
 				328A4A7826A00882007A9235 /* JJFileManager.swift */,
 			);
 			path = File;
+			sourceTree = "<group>";
+		};
+		328A4A7A26A00EF3007A9235 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		32FC6154265B54C700A99A1F /* Main */ = {

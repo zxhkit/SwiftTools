@@ -34,7 +34,9 @@ target 'SwiftTools' do
   pod 'NVActivityIndicatorView', '~> 5.1.1'
   pod 'lottie-ios', '3.2.3'
   pod "ESTabBarController-swift", '2.8.0'
-  
+
+  pod 'CocoaLumberjack/Swift'   #  日志
+
   #OC
   pod 'FLEX', '4.4.1', :configurations => ['Debug']
   pod 'SVGAPlayer', '~> 2.5.7'
