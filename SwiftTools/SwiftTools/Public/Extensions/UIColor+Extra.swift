@@ -10,9 +10,22 @@ import Foundation
 
 extension UIColor {
     
+    static func colorLightDark(_ light:String,_ lightAlpha:CGFloat = 1,_ dark:String,_ darkAlpha:CGFloat = 1) -> UIColor {
+        if #available(iOS 13.0, *) {
+            return UIColor.init { (traitCollection) -> UIColor in
+                if traitCollection.userInterfaceStyle == .light {
+                    return UIColor.hexString(light, lightAlpha)
+                }else{
+                    return UIColor.hexString(dark, darkAlpha)
+                }
+            }
+        } else {
+            return UIColor.hexString(light, lightAlpha)
+        }
+    }
     
     /// 根据十六进制文字创建颜色
-    class  func hexString(_ hexString:String,_ alpha:CGFloat = 1) -> UIColor {
+    class func hexString(_ hexString:String,_ alpha:CGFloat = 1) -> UIColor {
         //处理数值
         var cString = hexString.uppercased().trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         let length = (cString as NSString).length
