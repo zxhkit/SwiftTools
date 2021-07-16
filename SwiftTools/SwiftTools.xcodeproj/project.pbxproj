@@ -68,6 +68,10 @@
 		328A4A7E26A01C01007A9235 /* JJLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A7D26A01C01007A9235 /* JJLogFormatter.swift */; };
 		328A4A8026A03100007A9235 /* JJLogFileManagerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A7F26A03100007A9235 /* JJLogFileManagerDefault.swift */; };
 		328A4A8226A0327D007A9235 /* Date+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A8126A0327D007A9235 /* Date+Extra.swift */; };
+		328A4A8526A05CFF007A9235 /* JJEmitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A8426A05CFF007A9235 /* JJEmitterViewController.swift */; };
+		328A4A8726A05F3D007A9235 /* JJSnowRainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A8626A05F3D007A9235 /* JJSnowRainView.swift */; };
+		328A4A8926A06834007A9235 /* JJRedRainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A8826A06834007A9235 /* JJRedRainView.swift */; };
+		328A4A8D26A11BC9007A9235 /* JJRedPackertRainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A4A8C26A11BC9007A9235 /* JJRedPackertRainView.swift */; };
 		32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6155265B555C00A99A1F /* JJTabBarController.swift */; };
 		32FC6158265B558100A99A1F /* JJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC6157265B558100A99A1F /* JJNavigationController.swift */; };
 		32FC615B265B559F00A99A1F /* JJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FC615A265B559F00A99A1F /* JJHomeViewController.swift */; };
@@ -144,6 +148,10 @@
 		328A4A7D26A01C01007A9235 /* JJLogFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJLogFormatter.swift; sourceTree = "<group>"; };
 		328A4A7F26A03100007A9235 /* JJLogFileManagerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJLogFileManagerDefault.swift; sourceTree = "<group>"; };
 		328A4A8126A0327D007A9235 /* Date+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extra.swift"; sourceTree = "<group>"; };
+		328A4A8426A05CFF007A9235 /* JJEmitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJEmitterViewController.swift; sourceTree = "<group>"; };
+		328A4A8626A05F3D007A9235 /* JJSnowRainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJSnowRainView.swift; sourceTree = "<group>"; };
+		328A4A8826A06834007A9235 /* JJRedRainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJRedRainView.swift; sourceTree = "<group>"; };
+		328A4A8C26A11BC9007A9235 /* JJRedPackertRainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJRedPackertRainView.swift; sourceTree = "<group>"; };
 		32FC6155265B555C00A99A1F /* JJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTabBarController.swift; sourceTree = "<group>"; };
 		32FC6157265B558100A99A1F /* JJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNavigationController.swift; sourceTree = "<group>"; };
 		32FC615A265B559F00A99A1F /* JJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJHomeViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +239,7 @@
 		327FF006268AAEE500BC3BC2 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				328A4A8326A05CC8007A9235 /* 粒子动画 */,
 				328A4A38269EF724007A9235 /* 分页 */,
 				328A4A27269EC605007A9235 /* 轮播图 */,
 				328A4A24269E8B15007A9235 /* ZL图片选择 */,
@@ -445,6 +454,17 @@
 				328A4A7F26A03100007A9235 /* JJLogFileManagerDefault.swift */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		328A4A8326A05CC8007A9235 /* 粒子动画 */ = {
+			isa = PBXGroup;
+			children = (
+				328A4A8426A05CFF007A9235 /* JJEmitterViewController.swift */,
+				328A4A8626A05F3D007A9235 /* JJSnowRainView.swift */,
+				328A4A8826A06834007A9235 /* JJRedRainView.swift */,
+				328A4A8C26A11BC9007A9235 /* JJRedPackertRainView.swift */,
+			);
+			path = "粒子动画";
 			sourceTree = "<group>";
 		};
 		32FC6154265B54C700A99A1F /* Main */ = {
@@ -727,15 +747,19 @@
 				328A4A37269EE87B007A9235 /* Extensions+File.swift in Sources */,
 				328A4A53269FCDBC007A9235 /* ListRefreshViewController.swift in Sources */,
 				328A4A6A269FDAB9007A9235 /* HeightChangeAnimationViewController.swift in Sources */,
+				328A4A8526A05CFF007A9235 /* JJEmitterViewController.swift in Sources */,
 				327FF015268AEE9100BC3BC2 /* MoyaConfig.swift in Sources */,
 				327FF0032689F5A000BC3BC2 /* JJBaseViewController.swift in Sources */,
 				32FC6156265B555C00A99A1F /* JJTabBarController.swift in Sources */,
+				328A4A8926A06834007A9235 /* JJRedRainView.swift in Sources */,
+				328A4A8726A05F3D007A9235 /* JJSnowRainView.swift in Sources */,
 				328A4A8026A03100007A9235 /* JJLogFileManagerDefault.swift in Sources */,
 				327FF01D268B4BC900BC3BC2 /* APIUser.swift in Sources */,
 				322B64FA2698186F00FDA10B /* ObjectMapperModel.swift in Sources */,
 				328A4A2D269ECED7007A9235 /* JJCycleCell.swift in Sources */,
 				327FF00B268AB38C00BC3BC2 /* JJAppConfig.swift in Sources */,
 				328A4A59269FCFC4007A9235 /* CollectionViewViewController.swift in Sources */,
+				328A4A8D26A11BC9007A9235 /* JJRedPackertRainView.swift in Sources */,
 				328A4A63269FD791007A9235 /* NestViewController.swift in Sources */,
 				328A4A29269EC638007A9235 /* JJCycleViewController.swift in Sources */,
 				328A4A6F269FDC0F007A9235 /* HeaderPositionViewController.swift in Sources */,

@@ -32,7 +32,7 @@ class JJHomeViewController: JJBaseViewController {
     
     
     private var data:[String] = ["测试","算法","网络请求","json处理","ObjectMapper","基本方法验证","ZL图片选择","轮播图",
-                                 "分页pager"
+                                 "分页pager","粒子动画"
     
     ]
     
@@ -117,7 +117,9 @@ extension JJHomeViewController: UITableViewDelegate, UITableViewDataSource{
         case "分页pager":
             let vc = JJPagerViewController()
             navigationController?.pushViewController(vc, animated: true)
-            
+        case "粒子动画":
+            let vc = JJEmitterViewController()
+            navigationController?.pushViewController(vc, animated: true)
             
             
         default:
