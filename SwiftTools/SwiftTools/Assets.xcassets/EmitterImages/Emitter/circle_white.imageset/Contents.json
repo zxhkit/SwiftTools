@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "circle_white.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
