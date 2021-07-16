@@ -11,6 +11,7 @@ import UIKit
 class JJEmitterViewController: JJBaseViewController {
     
     var snowView:JJSnowRainView?
+    var redPackertView:JJRedPackertRainView?
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationViewTitle("粒子动画")
@@ -46,6 +47,7 @@ class JJEmitterViewController: JJBaseViewController {
     
     func test0() {
         snowView?.removeFromSuperview()
+        snowView = nil
     }
     func test1() {
         
@@ -56,7 +58,9 @@ class JJEmitterViewController: JJBaseViewController {
          
     }
     func test2() {
-         
+        redPackertView = JJRedPackertRainView(frame: CGRect(x: 0, y: kNavBarHeight*2, width: KScreenWidth, height: KScreenHeight-kNavBarHeight*2))
+        view.addSubview(redPackertView!)
+        redPackertView?.startRedPackerts()
     }
     func test3() {
         

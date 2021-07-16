@@ -9,8 +9,10 @@
 import UIKit
 import CocoaLumberjack
 
+
+
 class JJLogManager: NSObject {
-    
+
     static let shared = JJLogManager()
     
     static let ddLogLevel:DDLogLevel = DDLogLevel.warning

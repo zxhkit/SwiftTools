@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CocoaLumberjack
 
 let KScreenWidth:Int = Int(UIScreen.main.bounds.size.height < UIScreen.main.bounds.size.width ? UIScreen.main.bounds.size.height : UIScreen.main.bounds.size.width)
 let KScreenHeight:Int = Int(UIScreen.main.bounds.size.height > UIScreen.main.bounds.size.width ? UIScreen.main.bounds.size.height : UIScreen.main.bounds.size.width)
@@ -26,7 +27,9 @@ let kBottomSafeHeight = kIs_iPhone_X ? 34 : 0
 
 
 
-
+func JJLog<T>(_ fmt: T) {
+    DDLogVerbose(T.self)
+}
 
 
 
