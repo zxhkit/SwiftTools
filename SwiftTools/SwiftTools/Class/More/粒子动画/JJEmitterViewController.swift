@@ -116,7 +116,7 @@ class JJEmitterViewController: JJBaseViewController {
  CAShaperLayer: 用于绘制立体的贝塞尔曲线
  
  1.基本介绍
- - CAEmitterLayer是粒子发射源,用来发射粒子,它所发射的粒子就是CAEmitterCell,当然李子怡可以发射粒子.我们可以将CAEmitterLayer比作是CAEmitterCell的容器,它会按照你的设置来以不同的样式不断产生粒子，也就是CAEmitterCell.
+ - CAEmitterLayer是粒子发射源,用来发射粒子,它所发射的粒子就是CAEmitterCell,当然粒子可以发射粒子.我们可以将CAEmitterLayer比作是CAEmitterCell的容器,它会按照你的设置来以不同的样式不断产生粒子，也就是CAEmitterCell.
  
  - CAEmitterCell则决定了粒子自身的一些特征，例如速度，加速度，发射的范围，颜色等等。这些属性大多是以“中间值”配合一个范围值的方式来表示的。
  
@@ -241,6 +241,16 @@ class JJEmitterViewController: JJBaseViewController {
  
  
  
+ CAEmitterCell决定粒子运行轨迹的属性
+ 
+ emissionLongitude:表示粒子飞行方向跟水平坐标轴(X轴)之间的夹角,默认是0,顺时针方向是正方向
+ 
+ 例如emisiionLongitude为0,则粒子顺着x轴飞行,
+ 如果想沿着y轴向下飞行,那么可以设置emissionLoongitude=Double.pi/2
+ 
+ emissionLatitude:这个和emissionLongitude的原理是一样的,只不过是哎三维平面上的x-z轴上,z与x的夹角
+ 
+
  
  */
 
